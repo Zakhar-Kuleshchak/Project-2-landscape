@@ -1,0 +1,144 @@
+main {
+    margin: auto;
+    width: 375px;
+    .square-gray {
+        height: 240px;
+        background-color: rgba(196, 196, 196, 1);
+    }
+
+    .how-it-works {
+        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+    } 
+
+    .image-text {
+        margin-left: 15px;
+        display: flex;
+        padding-top: 48px;
+        padding-bottom: 10px;
+    }
+
+    .image-text > h6 {
+        color: #212529;
+        padding-left: 5px;
+        font-size: 14px;
+        line-height: 19px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .title {
+        margin-left: 15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        color: #212529;
+        padding-bottom: 15px;
+    }
+
+    .title span {
+        color: $color-primary;
+    }
+
+    .description {
+        margin-left: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        padding-right: 16px;
+        padding-bottom: 40px;
+    }
+
+    .btn-how-it-works {
+        height: 44px;
+        width: 303px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        background-color: #00730C;
+        color: white;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        border: 1px solid #00730C;
+        border-radius: 5px;
+    }
+
+    .text-arrow {
+        display: flex;
+        justify-content: center;
+        color: #00730C;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    .text-arrow > h6 {
+        padding-right: 12px;
+    }
+
+    .btn-happy-customrs {
+        width: 133px;
+        height: 32px;
+        background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+        border-radius: 32px;
+        border: none;
+    }
+
+    .btn-garden-created {
+        width: 128px;
+        height: 32px;
+        background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+        border-radius: 32px;
+        border: none;
+    }
+
+    .quantity-members {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        color: #212529;
+    }
+
+    .quantity-text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    // далі йде services we provide
+    .services-we-provide {
+        padding-top: 50px;
+    }
+
+    .services-we-provide > h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        color: #212529;
+        margin-bottom: 15px;
+    } 
+
+    .services-we-provide span {
+        color: $color-primary;
+    }
+
+    .services-we-provide > h6 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

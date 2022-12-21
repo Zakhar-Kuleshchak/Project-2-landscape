@@ -1,0 +1,63 @@
+header {
+    width: 100%;
+    color: white;
+
+    .row {
+        display: flex;
+    }
+    .container {
+        width: 375px;
+        margin: auto;
+    }
+    
+    .top-navbar {
+        background-color: $color-primary;
+        padding: $padding-1;
+    }
+
+    .email {
+        padding-right: 20px;
+        height: 20px;
+    }
+
+    .top-header-font {
+        display: none;
+    }
+
+    .call {
+        padding-right: 20px;
+        height: 20px;
+    }
+
+    .location {
+        padding-right: 183px;
+        height: 20px;
+    }
+
+    .header-menu {
+        list-style: none;
+        width: 53px;
+        height: 16px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .navbar {
+        height: 70px;
+        padding: $padding-2;
+    }
+
+    .logo {
+        margin-right: 149px;
+    }
+
+    .call-button {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1410px;
+    }
+}
