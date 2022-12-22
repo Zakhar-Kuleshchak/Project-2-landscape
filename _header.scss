@@ -1,37 +1,36 @@
 header {
+    // mobile (xs)
     width: 100%;
     color: white;
+
+    .container {
+        background-color: $color-primary;
+    }
+
+    .container-white-bg {
+        background-color: white;
+    }
 
     .row {
         display: flex;
     }
-    .container {
-        width: 375px;
-        margin: auto;
-    }
     
     .top-navbar {
-        background-color: $color-primary;
         padding: $padding-1;
+        display: flex;
+        justify-content: space-between;
     }
 
-    .email {
-        padding-right: 20px;
-        height: 20px;
+    .top-navbar a {
+        margin-right: 20px;
     }
 
-    .top-header-font {
+    .top-navbar span {
         display: none;
     }
 
-    .call {
-        padding-right: 20px;
-        height: 20px;
-    }
-
-    .location {
-        padding-right: 183px;
-        height: 20px;
+    .email-call-location {
+        display: flex;
     }
 
     .header-menu {
@@ -45,6 +44,7 @@ header {
     .navbar {
         height: 70px;
         padding: $padding-2;
+        justify-content: space-between;
     }
 
     .logo {
@@ -54,10 +54,108 @@ header {
     .call-button {
         margin-right: 40px;
     }
-}
 
-@media (min-width: 1600px) {
-    .container {
-        max-width: 1410px;
+    .menu-callUs {
+        display: none;
     }
+
+    .container-center {
+        width: 100%;
+        margin: auto;
+    }
+  
+  // tablet (sm)
+  @media(min-width: 768px) {
+    .container-center {
+      max-width: 720px;
+    }
+
+    .top-navbar span {
+        display: block;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        margin-left: 10px;
+    }
+
+    .top-navbar a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+    }
+  }
+  
+  // laptop (m)
+  @media(min-width: 1024px) {
+    .container-center {
+      max-width: 970px;
+    }
+  }
+  
+//   тут змінюватиметься нижній navbar
+  // laptop-l (lg)
+  @media(min-width: 1200px) {
+    .container-center {
+      max-width: 1170px;
+    }
+
+    .navbar {
+        height: 85px;
+    }
+
+    .call-button {
+        display: none;
+    }
+
+    .group {
+        display: none;
+    }
+
+    .menu-callUs {
+        display: flex;
+    }
+
+    .menu-callUs ul {
+        display: flex;
+    }
+
+    .menu-callUs li {
+        margin-right: 44px;
+    }
+
+    .menu-callUs a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #212529;
+    }
+
+    .menu-callUs a:hover {
+        color: #00730C;
+    }
+
+    .menu-callUs a img {
+        margin-left: 5px;
+    }
+
+    .menu-callUs a img:nth-child(2) {
+        display: none;
+    }
+
+    .menu-callUs a:hover img:nth-child(2) {
+        display: inline-block;
+    }
+
+    .menu-callUs a:hover img:nth-child(1) {
+        display: none;
+    }
+  }
+  
+  // desktop
+  @media(min-width:1600px) {
+    .container-center {
+      max-width: 1410px;
+    }
+  }
 }

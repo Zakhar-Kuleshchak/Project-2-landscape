@@ -2,39 +2,74 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Nunito", sans-serif;
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  display: flex;
+  align-items: center;
+}
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-8 {
+  flex: 0 0 66.66667;
+  max-width: 66.66667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 header {
   width: 100%;
   color: white;
 }
+header .container {
+  background-color: #0C4B35;
+}
+header .container-white-bg {
+  background-color: white;
+}
 header .row {
   display: flex;
 }
-header .container {
-  width: 375px;
-  margin: auto;
-}
 header .top-navbar {
-  background-color: #0C4B35;
   padding: 20px 20px 15px 20px;
+  display: flex;
+  justify-content: space-between;
 }
-header .email {
-  padding-right: 20px;
-  height: 20px;
+header .top-navbar a {
+  margin-right: 20px;
 }
-header .top-header-font {
+header .top-navbar span {
   display: none;
 }
-header .call {
-  padding-right: 20px;
-  height: 20px;
-}
-header .location {
-  padding-right: 183px;
-  height: 20px;
+header .email-call-location {
+  display: flex;
 }
 header .header-menu {
   list-style: none;
@@ -46,6 +81,7 @@ header .header-menu {
 header .navbar {
   height: 70px;
   padding: 15px 15px 15px 15px;
+  justify-content: space-between;
 }
 header .logo {
   margin-right: 149px;
@@ -53,12 +89,86 @@ header .logo {
 header .call-button {
   margin-right: 40px;
 }
-
+header .menu-callUs {
+  display: none;
+}
+header .container-center {
+  width: 100%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  header .container-center {
+    max-width: 720px;
+  }
+  header .top-navbar span {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    margin-left: 10px;
+  }
+  header .top-navbar a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  header .container-center {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  header .container-center {
+    max-width: 1170px;
+  }
+  header .navbar {
+    height: 85px;
+  }
+  header .call-button {
+    display: none;
+  }
+  header .group {
+    display: none;
+  }
+  header .menu-callUs {
+    display: flex;
+  }
+  header .menu-callUs ul {
+    display: flex;
+  }
+  header .menu-callUs li {
+    margin-right: 44px;
+  }
+  header .menu-callUs a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #212529;
+  }
+  header .menu-callUs a:hover {
+    color: #00730C;
+  }
+  header .menu-callUs a img {
+    margin-left: 5px;
+  }
+  header .menu-callUs a img:nth-child(2) {
+    display: none;
+  }
+  header .menu-callUs a:hover img:nth-child(2) {
+    display: inline-block;
+  }
+  header .menu-callUs a:hover img:nth-child(1) {
+    display: none;
+  }
+}
 @media (min-width: 1600px) {
-  .container {
+  header .container-center {
     max-width: 1410px;
   }
 }
+
 main {
   margin: auto;
   width: 375px;
@@ -69,6 +179,7 @@ main .square-gray {
 }
 main .how-it-works {
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+  padding-bottom: 35px;
 }
 main .image-text {
   margin-left: 15px;
@@ -110,7 +221,9 @@ main .btn-how-it-works {
   width: 303px;
   cursor: pointer;
   margin: auto;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #00730C;
   color: white;
   font-style: normal;
@@ -134,6 +247,11 @@ main .text-arrow {
 main .text-arrow > h6 {
   padding-right: 12px;
 }
+main .buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
 main .btn-happy-customrs {
   width: 133px;
   height: 32px;
@@ -147,6 +265,8 @@ main .btn-garden-created {
   background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
   border-radius: 32px;
   border: none;
+  margin-right: 16px;
+  margin-left: 12px;
 }
 main .quantity-members {
   font-style: normal;
@@ -181,7 +301,27 @@ main .services-we-provide > h6 {
   font-size: 14px;
   line-height: 22px;
   text-align: center;
-  margin-bottom: 30px;
   margin-left: 16px;
   margin-right: 16px;
+}
+main .service {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .service-column {
+  margin-left: 20px;
+}
+main .service-column > h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+main .service-column > h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+main .col-xs-12 {
+  padding: 10px 15px 10px 15px;
 }/*# sourceMappingURL=style.css.map */
