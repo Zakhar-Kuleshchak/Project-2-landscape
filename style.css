@@ -338,6 +338,7 @@ main .container-center h1 span {
 main .container-center h6 {
   font-size: 14px;
   line-height: 22px;
+  color: #676767;
 }
 @media (min-width: 1600px) {
   main .container-center {
