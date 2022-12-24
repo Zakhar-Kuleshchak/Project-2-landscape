@@ -1,6 +1,10 @@
 main {
     margin: auto;
-    width: 375px;
+    width: 100%;
+
+    .container {
+        padding: $padding-2;
+    }
     .square-gray {
         height: 240px;
         background-color: rgba(196, 196, 196, 1);
@@ -176,9 +180,131 @@ main {
         line-height: 22px;
     }
 
-    .col-xs-12 {
-        padding: 10px 15px 10px 15px;
+    // стилі для трьох картинок і тексту
+    .container-center h1 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 38px;
+        color: #212529;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .container-center h1 span {
+        color: #00730C;
+    }
+
+    .container-center h6 {
+        font-size: 14px;
+        line-height: 22px;
+    } 
+
+    // desktop
+  @media(min-width:1600px) {
+    .container-center {
+      max-width: 1410px;
+      margin: auto;
+    }
+
+    .square-gray {
+        height: 673px;
+        width: calc(50%);
+        order: 1;
+    }
+
+    .how-it-works {
+        height: 673px;
+        width: calc(50%);
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .col-xl-3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        width: 330px;
+        height: 366px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 44px;
+        padding-right: 43px;
+        margin-right: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .service:hover {
+        background-color: #00730C;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .service:nth-child(4) {
+        margin-right: 0px;
+    }
+
+    .service:nth-child(8) {
+        margin-right: 0px;
+    }
+
+    .service-column {
+        margin: 0 auto;
+        text-align: center;
+    } 
+
+    .service-column h5 {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .service-column h6 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .service img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 50px;
+    }
+
+    .services-we-provide h1 {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+    }
+
+    .services-we-provide h6 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .service img:nth-child(2) {
+        display: none;
+    }
+
+    .service:hover img:nth-child(2) {
+        display: inline-block;
+    }
+
+    .service:hover img:nth-child(1) {
+        display: none;
     }
 
 
+    // стилі для трьох картинок і тексту
+
+  }
 }
