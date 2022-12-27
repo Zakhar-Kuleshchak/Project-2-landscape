@@ -6,13 +6,22 @@ main {
     .container {
         padding: $padding-2;
     }
-    .square-gray {
+    // стилізація container-fluid
+    .container-fluid {
+        position: relative;
+        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+    }
+
+    .woman-holding-plant {
         height: 240px;
-        background-color: #C4C4C4;
+        width: 375px;
+    }
+
+    .woman-holding-plant a img {
+        display: block;
     }
 
     .how-it-works {
-        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         padding-bottom: 35px;
     } 
 
@@ -226,13 +235,22 @@ main {
 
     // tablet
   @media(min-width:768px) {
-    .how-it-works {
+
+    .container-fluid {
         background: url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         background-repeat: no-repeat;
         background-position-y: 95%;
+    }
+
+    .woman-holding-plant {
+        height: 492px;
+        width: 768px;
+    }
+
+    .how-it-works {
         padding-bottom: 35px;
     } 
-
+// стилістика services we provide
     .col-sm-6 {
         display: flex;
         flex-wrap: wrap;
@@ -309,6 +327,11 @@ main {
         margin: auto;
     }
 
+    .woman-holding-plant {
+        height: 656px;
+        width: 1024px;
+    }
+
     .services-we-provide p {
         width: 727px;
     }
@@ -323,6 +346,17 @@ main {
 @media(min-width:1200px) {
     .container {
         max-width: 1170px;
+    }
+    .how-it-works {
+        width: calc(50%);
+    }
+    .woman-holding-plant {
+        width: calc(50%);
+        height: 384px;
+        width: 600px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
     .col-lg-4 {
         flex-wrap: wrap;
@@ -387,7 +421,7 @@ main {
         margin-bottom: 10px;
         cursor: pointer;
     }
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     .services-we-provide p {
         width: 1136px;
         height: 60px;
