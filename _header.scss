@@ -5,6 +5,12 @@ header {
     color: white;
 
     .container {
+        padding: $padding-2;
+        width: 100%;
+        margin: auto;
+    }
+
+    .container-green-bg {
         background-color: $color-primary;
     }
 
@@ -15,12 +21,11 @@ header {
     .row {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     
     .top-navbar {
-        padding: $padding-1;
-        display: flex;
-        justify-content: space-between;
+        padding: 20px 5px 15px 5px;;
     }
 
     .top-navbar a {
@@ -53,7 +58,6 @@ header {
 
     .navbar {
         height: 70px;
-        padding: $padding-2;
         justify-content: space-between;
     }
 
@@ -64,15 +68,10 @@ header {
     .call-us-button {
         display: none;
     }
-
-    .container-center {
-        width: 100%;
-        margin: auto;
-    }
   
   // tablet (sm)
   @media(min-width: 768px) {
-    .container-center {
+    .container {
       max-width: 720px;
     }
 
@@ -93,7 +92,7 @@ header {
   
   // laptop (m)
   @media(min-width: 1024px) {
-    .container-center {
+    .container {
       max-width: 970px;
     }
   }
@@ -101,7 +100,7 @@ header {
 //   тут змінюватиметься нижній navbar
   // laptop-l (lg)
   @media(min-width: 1200px) {
-    .container-center {
+    .container {
       max-width: 1170px;
     }
 
@@ -166,13 +165,11 @@ header {
   
   // desktop
   @media(min-width:1600px) {
-    .container-center {
+    .container {
       max-width: 1410px;
     }
 
     .menu-callUs {
-        display: flex;
-        align-items: center;
         margin-left: 370px;
     }
 
