@@ -191,12 +191,18 @@ main .container-fluid {
   position: relative;
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
 }
+main .woman-holding-plant img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 main .woman-holding-plant {
   height: 240px;
   width: 375px;
-}
-main .woman-holding-plant a img {
-  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 main .how-it-works {
   padding-bottom: 35px;
@@ -378,11 +384,10 @@ main .service-about-company {
 }
 @media (min-width: 768px) {
   main .container-fluid {
-    background: url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-    background-repeat: no-repeat;
+    background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
     background-position-y: 95%;
   }
-  main .woman-holding-plant {
+  main .woman-holding-plant img {
     height: 492px;
     width: 768px;
   }
@@ -475,11 +480,7 @@ main .service-about-company {
   main .container {
     max-width: 1170px;
   }
-  main .how-it-works {
-    width: 50%;
-  }
   main .woman-holding-plant {
-    width: 50%;
     height: 384px;
     width: 600px;
     position: absolute;
@@ -498,26 +499,16 @@ main .service-about-company {
     max-width: 1410px;
     margin: auto;
   }
-  main .square-gray {
+  main .container-fluid {
+    height: 719px;
+  }
+  main .woman-holding-plant {
+    width: 1013px;
     height: 673px;
-    width: 50%;
-    order: 1;
   }
-  main .how-it-works {
+  main .woman-holding-plant img {
+    width: 1013px;
     height: 673px;
-    width: 50%;
-  }
-  main .image-text {
-    display: flex;
-  }
-  main .title {
-    display: flex;
-  }
-  main .description {
-    display: flex;
-  }
-  main .row {
-    display: flex;
   }
   main .col-xl-3 {
     display: flex;

@@ -12,14 +12,25 @@ main {
         background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
     }
 
+    .woman-holding-plant img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .woman-holding-plant {
         height: 240px;
         width: 375px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
     }
-
-    .woman-holding-plant a img {
-        display: block;
-    }
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!подивися, чи нижче це потрібно, і якому блоку div це задавати!!!!!!!!!!!!!!
+    // .woman-holding-plant:after {
+    //     content: '';
+    //     display: block;
+    //     clear: both;
+    // }
 
     .how-it-works {
         padding-bottom: 35px;
@@ -221,9 +232,6 @@ main {
 
     // стилі для mission i vision
 
-    .services-about-company {
-    }
-
     .service-about-company {
         width: 162px;
         height: 94px;
@@ -237,12 +245,11 @@ main {
   @media(min-width:768px) {
 
     .container-fluid {
-        background: url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-        background-repeat: no-repeat;
+        background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         background-position-y: 95%;
     }
 
-    .woman-holding-plant {
+    .woman-holding-plant img {
         height: 492px;
         width: 768px;
     }
@@ -347,11 +354,7 @@ main {
     .container {
         max-width: 1170px;
     }
-    .how-it-works {
-        width: calc(50%);
-    }
     .woman-holding-plant {
-        width: calc(50%);
         height: 384px;
         width: 600px;
         position: absolute;
@@ -374,32 +377,36 @@ main {
       margin: auto;
     }
 
-    .square-gray {
+    .container-fluid {
+        height: 719px;
+
+    }
+
+    .woman-holding-plant {
+        width: 1013px;
         height: 673px;
-        width: calc(50%);
-        order: 1;
     }
 
-    .how-it-works {
+    .woman-holding-plant img {
+        width: 1013px;
         height: 673px;
-        width: calc(50%);
     }
 
-    .image-text {
-        display: flex;
-    }
+    // .image-text {
+    //     display: flex;
+    // }
 
-    .title {
-        display: flex;
-    }
+    // .title {
+    //     display: flex;
+    // }
 
-    .description {
-        display: flex;
-    }
+    // .description {
+    //     display: flex;
+    // }
 
-    .row {
-        display: flex;
-    }
+    // .row {
+    //     display: flex;
+    // }
 
     // далі services we provide
     .col-xl-3 {
