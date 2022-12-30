@@ -190,12 +190,7 @@ main .container {
 main .container-fluid {
   position: relative;
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-}
-main .woman-holding-plant img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 710px;
 }
 main .woman-holding-plant {
   height: 240px;
@@ -204,11 +199,16 @@ main .woman-holding-plant {
   right: 0;
   bottom: 0;
 }
+main .woman-holding-plant img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 main .how-it-works {
   padding-bottom: 35px;
 }
 main .image-text {
-  margin-left: 15px;
   display: flex;
   padding-top: 48px;
   padding-bottom: 10px;
@@ -222,22 +222,18 @@ main .how-it-works > .image-text > h6 {
   font-weight: 700;
 }
 main .how-it-works > .title > h1 {
-  margin-left: 15px;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
   color: #212529;
-  padding-bottom: 15px;
   text-align: start;
 }
 main .how-it-works > .description > h6 {
-  margin-left: 15px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  padding-right: 16px;
   padding-bottom: 40px;
   color: #212529;
 }
@@ -269,7 +265,7 @@ main .text-arrow {
   margin-top: 20px;
   cursor: pointer;
 }
-main .how-it-works > .text-arrow > h6 {
+main .how-it-works .text-arrow h6 {
   padding-right: 12px;
   color: #00730C;
 }
@@ -291,7 +287,7 @@ main .btn-garden-created {
   background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
   border-radius: 32px;
   border: none;
-  margin-right: 16px;
+  margin-right: 1px;
   margin-left: 12px;
 }
 main .quantity-members {
@@ -306,6 +302,9 @@ main .quantity-text {
   font-weight: 400;
   font-size: 10px;
   line-height: 14px;
+}
+main .buttons-larger-screen {
+  display: none;
 }
 main .services-we-provide {
   padding-top: 50px;
@@ -358,6 +357,10 @@ main .services-we-provide p {
   text-align: center;
   color: #676767;
 }
+main .images-block-experience {
+  background: white;
+  padding-top: 30px;
+}
 main .container h1 {
   font-weight: 700;
   font-size: 28px;
@@ -374,13 +377,92 @@ main .container h6 {
   line-height: 22px;
   color: #676767;
 }
+main .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 20px;
+}
 main .service-about-company {
   width: 162px;
   height: 94px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+}
+main .service-about-company img {
+  width: 40px;
+  height: 40px;
+}
+main .service-about-company h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #212529;
+}
+main .btn-discover-more {
+  height: 40px;
+  width: 167px;
+  cursor: pointer;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #00730C;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #00730C;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+main .why-choose-us-backgr {
+  background: #0C4B35;
+  padding-top: 50px;
+}
+main .why-choose-us h1 {
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+main .why-choose-us h6 {
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+main .proper {
+  display: flex;
+  gap: 10px;
+  width: 158px;
+}
+main .checkmark {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+main .checkmark img {
+  margin: auto;
+}
+main .proper h5 {
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+main .proper-take-care {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 29px;
 }
 @media (min-width: 768px) {
   main .container-fluid {
@@ -502,13 +584,107 @@ main .service-about-company {
   main .container-fluid {
     height: 719px;
   }
+  main .how-it-works {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  main .image-text {
+    margin-left: 0px;
+    padding-top: 87px;
+  }
+  main .how-it-works .image-text h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  main .how-it-works .title h1 {
+    margin-left: 0px;
+    font-size: 58px;
+    line-height: 79px;
+  }
+  main .how-it-works .description h6 {
+    margin-left: 0px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  main .btn-how-it-works {
+    margin: 0 0;
+    width: 175px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  main .row-btn-how-it-works-text-arrow {
+    display: flex;
+  }
+  main .text-arrow {
+    margin-top: 0px;
+    margin-left: 30px;
+    width: 159px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  main .how-it-works .text-arrow h6 {
+    color: #676767;
+  }
+  main .text-arrow h6 {
+    width: 142px;
+    color: #676767;
+  }
+  main .text-arrow img {
+    width: 20px;
+    height: 15px;
+  }
+  main .text-arrow img:nth-child(2) {
+    display: none;
+  }
+  main .buttons {
+    display: none;
+  }
+  main .buttons-larger-screen {
+    margin-top: 58px;
+    display: flex;
+  }
+  main .button-larger-screen {
+    width: 149px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  main .quantity-text {
+    margin-left: 10px;
+    width: 89px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #212529;
+  }
+  main .quantity {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+    border-radius: 35px;
+    padding: 15px 7px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #212529;
+  }
   main .woman-holding-plant {
-    width: 1013px;
+    width: 850px;
     height: 673px;
   }
   main .woman-holding-plant img {
-    width: 1013px;
+    width: 850px;
     height: 673px;
+  }
+  main .services-we-provide {
+    padding-top: 100px;
   }
   main .col-xl-3 {
     display: flex;
@@ -538,5 +714,15 @@ main .service-about-company {
   }
   main .service:nth-child(8) {
     margin-right: 0px;
+  }
+  main .container h1 {
+    margin-bottom: 30px;
+  }
+  main .images-block-experience {
+    margin-top: 100px;
+    display: block;
+    background: no-repeat url(images/main/Fern.svg);
+    background-position-y: 25%;
+    background-position-x: -20%;
   }
 }/*# sourceMappingURL=style.css.map */
