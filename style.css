@@ -197,7 +197,6 @@ main .woman-holding-plant {
   width: 375px;
   position: absolute;
   right: 0;
-  bottom: 0;
 }
 main .woman-holding-plant img {
   width: 100%;
@@ -253,6 +252,10 @@ main .btn-how-it-works {
   line-height: 20px;
   border: 1px solid #00730C;
   border-radius: 5px;
+}
+main .btn-how-it-works:hover {
+  background-color: #ffffff;
+  color: #00730C;
 }
 main .text-arrow {
   display: flex;
@@ -426,6 +429,11 @@ main .btn-discover-more {
   margin-top: 10px;
   margin-bottom: 50px;
 }
+main .btn-discover-more:hover {
+  background-color: #FFFFFF;
+  color: #00730C;
+  border-color: #00730C;
+}
 main .why-choose-us-backgr {
   background: #0C4B35;
   padding-top: 50px;
@@ -441,6 +449,7 @@ main .why-choose-us h6 {
 }
 main .proper {
   display: flex;
+  align-items: center;
   gap: 10px;
   width: 158px;
 }
@@ -463,15 +472,12 @@ main .proper-take-care {
   display: flex;
   flex-wrap: wrap;
   gap: 20px 29px;
+  margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   main .container-fluid {
     background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
     background-position-y: 95%;
-  }
-  main .woman-holding-plant img {
-    height: 492px;
-    width: 768px;
   }
   main .how-it-works {
     padding-bottom: 35px;
@@ -541,6 +547,22 @@ main .proper-take-care {
   main .service:hover img:nth-child(1) {
     display: none;
   }
+  main .btn-discover-more {
+    margin: 0;
+  }
+  main .why-choose-us {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  main .why-choose-us-info h1 {
+    text-align: left;
+  }
+  main .why-choose-us-info h6 {
+    text-align: left;
+  }
 }
 @media (min-width: 1024px) {
   main .container {
@@ -556,6 +578,9 @@ main .proper-take-care {
   }
   main .service {
     cursor: pointer;
+  }
+  main .why-choose-us {
+    gap: 82px;
   }
 }
 @media (min-width: 1200px) {
@@ -574,6 +599,10 @@ main .proper-take-care {
   }
   main .services-we-provide p {
     width: 852px;
+  }
+  main .young-woman-taking-care-her-plants img {
+    width: 672px;
+    height: 426px;
   }
 }
 @media (min-width: 1600px) {
@@ -724,5 +753,44 @@ main .proper-take-care {
     background: no-repeat url(images/main/Fern.svg);
     background-position-y: 25%;
     background-position-x: -20%;
+  }
+  main .why-choose-us-backgr {
+    height: 659px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  main .why-choose-us-info h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    margin-top: 0px;
+  }
+  main .why-choose-us-info h6 {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+  main .proper {
+    gap: 20px;
+    width: 242px;
+  }
+  main .proper h5 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  main .checkmark {
+    width: 30px;
+    height: 30px;
+  }
+  main .proper-take-care {
+    gap: 20px 118px;
+    margin-bottom: 50px;
+  }
+  main .btn-discover-more {
+    height: 50px;
+    width: 190px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

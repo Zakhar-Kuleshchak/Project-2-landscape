@@ -18,7 +18,6 @@ main {
         width: 375px;
         position: absolute;
         right: 0;
-        bottom: 0;
     }
 
     .woman-holding-plant img {
@@ -81,8 +80,11 @@ main {
         border: 1px solid #00730C;
         border-radius: 5px;
     }
-
-    .text-arrow {
+    .btn-how-it-works:hover {
+        background-color: #ffffff;
+        color: #00730C;
+    }
+        .text-arrow {
         display: flex;
         justify-content: center;
         color: #00730C;
@@ -280,6 +282,11 @@ main {
         margin-top: 10px;
         margin-bottom: 50px;
     }
+    .btn-discover-more:hover {
+        background-color: #FFFFFF;
+        color: #00730C;
+        border-color: #00730C;
+    }
     // далі why-choose-us
     .why-choose-us-backgr {
         background: #0C4B35;
@@ -296,6 +303,7 @@ main {
     }
     .proper {
         display: flex;
+        align-items: center;
         gap: 10px;
         width: 158px;
     }
@@ -318,6 +326,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         gap: 20px 29px;
+        margin-bottom: 30px;
     }
     // tablet
   @media(min-width:768px) {
@@ -326,12 +335,6 @@ main {
         background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         background-position-y: 95%;
     }
-
-    .woman-holding-plant img {
-        height: 492px;
-        width: 768px;
-    }
-
     .how-it-works {
         padding-bottom: 35px;
     } 
@@ -403,6 +406,23 @@ main {
     .service:hover img:nth-child(1) {
         display: none;
     }
+    .btn-discover-more {
+        margin: 0;
+    }
+    // далі йде why choose us
+    .why-choose-us {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .why-choose-us-info h1 {
+        text-align: left;
+    }
+    .why-choose-us-info h6 {
+        text-align: left;
+    }
   }
 
 // laptop-m (md)
@@ -424,7 +444,9 @@ main {
     .service {
         cursor: pointer;
     }
-    
+    .why-choose-us {
+        gap: 82px;
+    }
   }
 
 // laptop-l (lg)
@@ -446,7 +468,10 @@ main {
     .services-we-provide p {
         width: 852px;
     }
-
+    .young-woman-taking-care-her-plants img {
+        width: 672px;
+        height: 426px;
+    }
 }
     // desktop
   @media(min-width:1600px) {
@@ -610,6 +635,45 @@ main {
         background-position-y: 25%;
         background-position-x: -20%;
     }
-    
+    // далі why choose us
+    .why-choose-us-backgr {
+        height: 659px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .why-choose-us-info h1 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 61px;
+        margin-top: 0px;
+    }
+    .why-choose-us-info h6 {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+    .proper {
+        gap: 20px;
+        width: 242px;
+    }
+    .proper h5 {
+        font-size: 24px;
+        line-height: 33px;
+    } 
+    .checkmark {
+        width: 30px;
+        height: 30px;
+    }
+    .proper-take-care {
+        gap: 20px 118px;
+        margin-bottom: 50px;
+    }
+    .btn-discover-more {
+        height: 50px;
+        width: 190px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+    }
   }
 }
