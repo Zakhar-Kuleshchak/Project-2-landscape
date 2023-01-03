@@ -2,7 +2,6 @@ main {
     font-family: "Nunito", sans-serif;
     margin: auto;
     width: 100%;
-
     .container {
         padding: $padding-2;
     }
@@ -12,30 +11,25 @@ main {
         background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         height: 710px;
     }
-
     .woman-holding-plant {
         height: 240px;
         width: 375px;
         position: absolute;
         right: 0;
     }
-
     .woman-holding-plant img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-
     .how-it-works {
         padding-bottom: 35px;
     } 
-
     .image-text {
         display: flex;
         padding-top: 48px;
         padding-bottom: 10px;
     }
-
     .how-it-works > .image-text > h6 {
         color: #212529;
         padding-left: 5px;
@@ -44,7 +38,6 @@ main {
         font-style: normal;
         font-weight: 700;
     }
-
     .how-it-works > .title > h1 {
         font-style: normal;
         font-weight: 700;
@@ -53,7 +46,6 @@ main {
         color: #212529;
         text-align: start;
     }
-
     .how-it-works > .description > h6 {
         font-style: normal;
         font-weight: 400;
@@ -62,7 +54,6 @@ main {
         padding-bottom: 40px;
         color: #212529;
     }
-
     .btn-how-it-works {
         height: 44px;
         width: 303px;
@@ -95,18 +86,15 @@ main {
         margin-top: 20px;
         cursor: pointer;
     }
-
     .how-it-works .text-arrow h6 {
         padding-right: 12px;
         color: #00730C;
     }
-
     .buttons {
         display: flex;
         justify-content: flex-end;
         margin-top: 40px;
     }
-
     .btn-happy-customrs {
         width: 133px;
         height: 32px;
@@ -114,7 +102,6 @@ main {
         border-radius: 32px;
         border: none;
     }
-
     .btn-garden-created {
         width: 128px;
         height: 32px;
@@ -124,7 +111,6 @@ main {
         margin-right: 1px;
         margin-left: 12px;
     }
-
     .quantity-members {
         font-style: normal;
         font-weight: 700;
@@ -132,7 +118,6 @@ main {
         line-height: 16px;
         color: #212529;
     }
-
     .quantity-text {
         font-style: normal;
         font-weight: 400;
@@ -146,7 +131,6 @@ main {
     .services-we-provide {
         padding-top: 50px;
     }
-
     .services-we-provide > h1 {
         display: flex;
         justify-content: center;
@@ -156,11 +140,9 @@ main {
         color: #212529;
         margin-bottom: 15px;
     } 
-
     .services-we-provide span {
-        color: #00730C;;
+        color: #00730C;
     }
-
     .services-we-provide > h6 {
         font-weight: 400;
         font-size: 14px;
@@ -168,34 +150,29 @@ main {
         margin-left: 16px;
         margin-right: 16px;
     }
-
     .service {
         display: flex;    
         margin-top: 20px;
         margin-bottom: 20px;
         box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
     }
-
     .service-column {
         margin-left: 20px;   
     }
-
     .service-column > h5 {
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
     }
-
     .service-column > h6 {
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
     }
-
     .service img:nth-child(2) {
         display: none;
     }
-
     .services-we-provide p {
         font-weight: 400;
         font-size: 14px;
@@ -203,7 +180,6 @@ main {
         text-align: center;
         color: #676767;
     }
-
     // стилі для трьох картинок і тексту з mission і vision
     .images-block-experience {
         background: white;
@@ -217,19 +193,15 @@ main {
         text-align: center;
         margin-bottom: 15px;
     }
-
     .container h1 span {
         color: #00730C;
     }
-
     .container h6 {
         font-size: 14px;
         line-height: 22px;
         color: #676767;
     } 
-
     // стилі для mission i vision
-
     .services {
         display: flex;
         flex-wrap: wrap;
@@ -238,7 +210,6 @@ main {
         margin-top: 40px;
         gap: 20px;
     }
-
     .service-about-company {
         width: 162px;
         height: 94px;
@@ -250,12 +221,10 @@ main {
         box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
         border-radius: 5px;
     }
-
     .service-about-company img {
         width: 40px;
         height: 40px;
     }
-
     .service-about-company h6 {
         font-weight: 700;
         font-size: 14px;
@@ -291,6 +260,7 @@ main {
     .why-choose-us-backgr {
         background: #0C4B35;
         padding-top: 50px;
+        height: 684px;
     }
     .why-choose-us h1 {
         color: #FFFFFF;
@@ -328,9 +298,132 @@ main {
         gap: 20px 29px;
         margin-bottom: 30px;
     }
+    // далі йде working process
+    .working-process-background {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .working-process-background p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #676767;
+        margin-bottom: 30px;
+    } 
+    .working-process:nth-child(1) {
+        cursor: pointer;
+        width: 345px;
+        height: 208px;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
+            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1.svg);
+        margin-bottom: 20px;
+    }
+    .working-process:nth-child(2) {
+        cursor: pointer;
+        width: 345px;
+        height: 208px;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg),
+            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2.svg);
+        margin-bottom: 20px;
+    }
+    .working-process:nth-child(3) {
+        cursor: pointer;
+        width: 345px;
+        height: 208px;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg),
+            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3.svg);
+        margin-bottom: 20px;
+    }
+    .working-process:nth-child(4) {
+        cursor: pointer;
+        width: 345px;
+        height: 208px;
+        padding: 20px;
+        background: #FFFFFF;
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+        border-radius: 10px;
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg),
+            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4.svg);
+        margin-bottom: 20px;
+    }
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    .working-process:hover {
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process:hover img:nth-child(1) {
+        display: none;
+    }
+    .working-process:hover img:nth-child(2) {
+        display: inline-block;
+    }
+    .working-process:hover h5 {
+        color: #FFFFFF;
+    }
+    .working-process:hover h6 {
+        color: #FFFFFF;
+    }
+    .working-process h5 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #212529;
+    }
+// далі йде малий блок, де на background руки тримають землю з листками
+    .our-best-reliable-gardening-background { 
+        background: no-repeat url(images/main/hands\ holding\ leaf.jpg) center center / 100% 224px;
+        // background-size: cover;
+    } 
+    .our-best-reliable-gardening { 
+        padding-top: 50px; 
+        padding-bottom: 50px; 
+    } 
+    .our-best-reliable-gardening h3 { 
+        width: 272px; 
+        height: 54px; 
+        font-weight: 700; 
+        font-size: 20px; 
+        line-height: 27px; 
+        margin-left: 41px; 
+        text-align: center; 
+        color: #FFFFFF; 
+        margin-bottom: 30px;
+    } 
+    .btn-call-us-button { 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        padding: 10px 0px; 
+        gap: 10px; 
+        width: 137px; 
+        height: 40px; 
+        background: #FFFFFF; 
+        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08); 
+        border-radius: 5px; 
+        font-weight: 700; 
+        font-size: 14px; 
+        line-height: 19px; 
+        color: #00730C; 
+        margin-left: 108px; 
+    } 
+}
     // tablet
   @media(min-width:768px) {
-
     .container-fluid {
         background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
         background-position-y: 95%;
@@ -344,12 +437,10 @@ main {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
     .services-we-provide p {
         width: 545px;
         margin: auto;
     }
-
     .service {
         width: 330px;
         height: 366px;
@@ -361,9 +452,11 @@ main {
         padding-right: 43px;
         margin-top: 15px;
         margin-bottom: 15px;
+        background: no-repeat url(images/main/XMLID_46_white.svg);
+        background-position: 80px 25px;
     }
     .service:hover {
-        background-color: #00730C;
+        background: url(images/main/XMLID_46_.svg);
         color: white;
         border-radius: 10px;
     }
@@ -410,6 +503,9 @@ main {
         margin: 0;
     }
     // далі йде why choose us
+    .why-choose-us-backgr {
+        height: 437px;
+    }
     .why-choose-us {
         display: flex;
         flex-wrap: nowrap;
@@ -419,11 +515,51 @@ main {
     }
     .why-choose-us-info h1 {
         text-align: left;
+        margin-top: 0px;
     }
     .why-choose-us-info h6 {
         text-align: left;
     }
+// далі йде working process
+    .working-process h1 {
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+    }
+    .working-process-background .working-process h6 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .working-process:nth-child(1) { 
+        width: 330px;
+        height: 408px;
+    }
+    .working-process:nth-child(2) { 
+        width: 330px;
+        height: 408px;
+    }
+    .working-process:nth-child(3) { 
+        width: 330px;
+        height: 408px;
+    }
+    .working-process:nth-child(4) { 
+        width: 330px;
+        height: 408px;
+    }
+// далі йде малий блок, де на background руки тримають землю з листками
+    .our-best-reliable-gardening { 
+        display: flex;
+        padding-top: 78px; 
+        padding-bottom: 78px; 
+    } 
   }
+
+
+
+
+
+
 
 // laptop-m (md)
   @media(min-width:1024px) {
@@ -472,6 +608,12 @@ main {
         width: 672px;
         height: 426px;
     }
+    // why choose us
+    .why-choose-us-backgr {
+        height: 659px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 }
     // desktop
   @media(min-width:1600px) {
@@ -484,7 +626,6 @@ main {
         height: 719px;
 
     }
-
     .how-it-works {
         display: flex;
         flex-direction: column;
@@ -636,11 +777,6 @@ main {
         background-position-x: -20%;
     }
     // далі why choose us
-    .why-choose-us-backgr {
-        height: 659px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
     .why-choose-us-info h1 {
         font-weight: 700;
         font-size: 45px;
@@ -675,5 +811,13 @@ main {
         font-size: 18px;
         line-height: 24px;
     }
+// далі working process
+    .working-process-background p {
+        width: 1136px;
+        margin: auto;
+    }
+// далі йде малий блок, де на background руки тримають землю з листками
+    .our-best-reliable-gardening {
+        margin-left: 647px;
+    }
   }
-}
