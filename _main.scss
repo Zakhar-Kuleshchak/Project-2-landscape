@@ -359,10 +359,6 @@ main {
             right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4.svg);
         margin-bottom: 20px;
     }
-    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    .working-process:hover {
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
-    }
     .working-process:hover img:nth-child(1) {
         display: none;
     }
@@ -375,6 +371,22 @@ main {
     .working-process:hover h6 {
         color: #FFFFFF;
     }
+    .working-process:nth-child(1):hover {
+        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process:nth-child(2):hover {
+        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process:nth-child(3):hover {
+        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process:nth-child(4):hover {
+        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
     .working-process h5 {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -386,7 +398,7 @@ main {
 // далі йде малий блок, де на background руки тримають землю з листками
     .our-best-reliable-gardening-background { 
         background: no-repeat url(images/main/hands\ holding\ leaf.jpg) center center / 100% 224px;
-        // background-size: cover;
+        margin-bottom: 50px;
     } 
     .our-best-reliable-gardening { 
         padding-top: 50px; 
@@ -404,6 +416,7 @@ main {
         margin-bottom: 30px;
     } 
     .btn-call-us-button { 
+        cursor: pointer;
         display: flex; 
         flex-direction: row; 
         justify-content: center; 
@@ -421,6 +434,147 @@ main {
         color: #00730C; 
         margin-left: 108px; 
     } 
+// далі йде our trained staff
+    .our-trained-staff-background p {
+        width: 345px;
+        height: 110px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #676767;
+        margin-bottom: 30px;
+    }
+    .staff {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .wrapper {
+        height: 343px; 
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .slider {
+        height: 343px;
+        overflow: hidden;
+        position: relative;
+        width: inherit;
+        align-self: center;
+    }
+    .wrapper > input {
+        display: none;
+    }
+    .slides {
+	    position: absolute;
+	    width: inherit;
+    }
+    .slide1, .slide2, .slide3, .slide4 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+    .slide1 {
+        background-image: url(images/main/staff1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .slide2 {
+        background-image: url(images/main/staff2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .slide3 {
+        background-image: url(images/main/staff3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .slide4 {
+        background-image: url(images/main/staff4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .staffInfo {
+        background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+        border-radius: 5px;
+        width: 100%;
+        height: 62px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .staffInfo h4 {
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+    .staffInfo h6 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    .staff .controls {
+        height: 10px;
+        width: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: center;
+    }
+    .staff label {
+        cursor: pointer;
+        display: inline-block;
+        height: 6px;
+        position: relative;
+        width: 30px;
+        transition: ease-in-out .5s;
+        border-radius: 8px;
+    }
+    .staff label:after {
+        border: 2px solid #00730C;
+        border-radius: 8px;
+        content: " ";
+        display: block;
+        height: 2px;
+        width: 26px;
+    }
+    .staff label:hover, 
+    #slide1:checked ~ .controls label:nth-of-type(1),
+    #slide2:checked ~ .controls label:nth-of-type(2),
+    #slide3:checked ~ .controls label:nth-of-type(3),
+    #slide4:checked ~ .controls label:nth-of-type(4) {
+        background: #00730C;
+    }
+    .slides {
+        height: inherit;
+        opacity: 0;
+        position: absolute;
+        width: inherit;
+        z-index: 0;
+        transform: scale(0.5);
+        transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    }
+    #slide1:checked ~ .slider > .slide1,
+    #slide2:checked ~ .slider > .slide2,
+    #slide3:checked ~ .slider > .slide3,
+    #slide4:checked ~ .slider > .slide4 {
+        opacity: 1;
+        z-index: 0;
+        transform: scale(1);
+    }
 }
     // tablet
   @media(min-width:768px) {
@@ -503,8 +657,9 @@ main {
         margin: 0;
     }
     // далі йде why choose us
-    .why-choose-us-backgr {
-        height: 437px;
+    main .why-choose-us-backgr {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .why-choose-us {
         display: flex;
@@ -513,39 +668,94 @@ main {
         justify-content: space-between;
         align-items: center;
     }
-    .why-choose-us-info h1 {
+    main .why-choose-us-backgr .container .row .why-choose-us-info h1 {
         text-align: left;
         margin-top: 0px;
+        margin-bottom: 30px;
     }
-    .why-choose-us-info h6 {
+    main .why-choose-us-backgr .container .row .why-choose-us-info h6 {
         text-align: left;
+        margin-bottom: 50px;
     }
+    main .why-choose-us-backgr .container .row .proper-take-care {
+        margin-bottom: 50px;
+    }
+    main .why-choose-us-backgr .container .row .why-choose-us-info > .btn-discover-more {
+        margin-bottom: 0px;
+        margin: 0;
+    }
+
 // далі йде working process
-    .working-process h1 {
+    main .working-process-background {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .working-process-background .container h1 {
         font-weight: 800;
         font-size: 45px;
         line-height: 61px;
+    }
+    .working-process-background .container p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .working-process-background .working-process h5 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     .working-process-background .working-process h6 {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
     }
-    .working-process:nth-child(1) { 
+    .working-process-background .container .row .working-process {
         width: 330px;
         height: 408px;
+        padding: 50px 31px 70px 29px;
     }
-    .working-process:nth-child(2) { 
-        width: 330px;
-        height: 408px;
+    .working-process-background .container .row .working-process:nth-child(1) {
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
+            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 1.svg);
     }
-    .working-process:nth-child(3) { 
-        width: 330px;
-        height: 408px;
+    .working-process-background .container .row .working-process:nth-child(2) {
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
+            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 2.svg);
     }
-    .working-process:nth-child(4) { 
-        width: 330px;
-        height: 408px;
+    .working-process-background .container .row .working-process:nth-child(3) {
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
+            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 3.svg);
+    }
+    .working-process-background .container .row .working-process:nth-child(4) {
+        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
+            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 4.svg);
+    }
+    .working-process-background .container .row .working-process:nth-child(1):hover {
+        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 1\ white.svg),
+            right 10% top 50% / 100px no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process-background .container .row .working-process:nth-child(2):hover {
+        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 2\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process-background .container .row .working-process:nth-child(3):hover {
+        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 3\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process-background .container .row .working-process:nth-child(4):hover {
+        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 4\ white.svg),
+            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    }
+    .working-process img:nth-child(1) {
+        width: 70px;
+        height: 70px;
+    }
+    .working-process:hover img:nth-child(2) {
+        width: 70px;
+        height: 70px;
     }
 // далі йде малий блок, де на background руки тримають землю з листками
     .our-best-reliable-gardening { 
@@ -609,7 +819,7 @@ main {
         height: 426px;
     }
     // why choose us
-    .why-choose-us-backgr {
+    main .why-choose-us-backgr {
         height: 659px;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -777,30 +987,31 @@ main {
         background-position-x: -20%;
     }
     // далі why choose us
-    .why-choose-us-info h1 {
+    .why-choose-us-backgr .container .row .why-choose-us-info h1 {
         font-weight: 700;
         font-size: 45px;
         line-height: 61px;
         margin-top: 0px;
     }
-    .why-choose-us-info h6 {
+    .why-choose-us-backgr .container .row .why-choose-us-info h6 {
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 50px;
     }
-    .proper {
+    .why-choose-us-backgr .container .row .why-choose-us-info .proper {
         gap: 20px;
         width: 242px;
     }
-    .proper h5 {
+    .why-choose-us-backgr .container .row .why-choose-us-info .proper h5 {
+        font-weight: 700;
         font-size: 24px;
         line-height: 33px;
     } 
-    .checkmark {
+    .why-choose-us-backgr .container .row .why-choose-us-info .checkmark {
         width: 30px;
         height: 30px;
     }
-    .proper-take-care {
+    .why-choose-us-backgr .container .row .why-choose-us-info .proper-take-care {
         gap: 20px 118px;
         margin-bottom: 50px;
     }
