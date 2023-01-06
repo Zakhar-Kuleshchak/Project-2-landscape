@@ -533,6 +533,7 @@ main {
         align-items: center;
         justify-content: space-between;
         align-self: center;
+        margin-bottom: 50px;
     }
     .staff label {
         cursor: pointer;
@@ -574,6 +575,50 @@ main {
         opacity: 1;
         z-index: 0;
         transform: scale(1);
+    }
+// далі йде what clients saying
+    .what-clients-saying-background {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background: #E6F6EA center center / 100% 585px;
+        box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+        backdrop-filter: blur(36.378px);
+    }
+    .what-clients-saying-background p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #676767;
+        margin-bottom: 40px;
+    }
+    .client-response {
+        margin: auto;
+        background: #FFFFFF;
+        width: 345px;
+        padding: 20px;
+    }
+    .client-response h6 {
+        margin-top: 44px;
+        margin-bottom: 15px;
+    }
+    .client-response h5 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #212529;
+    }
+    .client-response p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #676767;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+    .client-response-mark {
+        display: flex;
+        justify-content: space-between;
     }
 }
     // tablet
