@@ -743,7 +743,7 @@ main #slide4:checked ~ .slider > .slide4 {
   z-index: 0;
   transform: scale(1);
 }
-main .what-clients-saying-background {
+main .what-clients-saying-backgr {
   height: 585px;
   padding-top: 50px;
   background: #E6F6EA;
@@ -751,7 +751,7 @@ main .what-clients-saying-background {
   -webkit-backdrop-filter: blur(36.378px);
           backdrop-filter: blur(36.378px);
 }
-main .what-clients-saying-background p {
+main .what-clients-saying-backgr p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -764,6 +764,7 @@ main .client-response {
   background: #FFFFFF;
   width: 345px;
   padding: 20px;
+  box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
 }
 main .client-response h6 {
   margin-top: 44px;
@@ -787,7 +788,179 @@ main .client-response-mark {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+main .frequently-asked-questions-backgr {
+  margin-top: 100px;
+  padding-top: 50px;
+}
+main .frequently-asked-questions-backgr p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+  margin-bottom: 40px;
+}
+main .frequently-asked-questions-backgr .container .questions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  height: 44px;
+  background: #FFF8F1;
+  border-radius: 3px;
+}
+main .question h6 {
+  width: 285px;
+  height: 19px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #212529;
+}
+main .question img {
+  width: 16px;
+  height: 16px;
+}
+main .our-insights-articles-backgr {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+main .our-insights-articles-backgr p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #676767;
+}
+main .ask-the-agronomists {
+  margin-top: 40px;
+  padding: 30px 20px 35px 20px;
+  background: no-repeat right 1% top 1% url(images/main/ask\ agronomist\ backgr.svg);
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  border-radius: 5px;
+}
+main .planting {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: 122px;
+  height: 30px;
+  background: #D9F1E0;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 40px;
+}
+main .ask-the-agronomists .planting > h6 {
+  width: 70px;
+  height: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #00730C;
+}
+main .ask-the-agronomists h5 {
+  width: 277px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #00730C;
+  margin-bottom: 15px;
+}
+main .ask-the-agronomists > h6 {
+  width: 305px;
+  height: 154px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #676767;
+  margin-bottom: 30px;
+}
+main .line {
+  width: 305px;
+  height: 1px;
+  background: #E3E3E3;
+  margin-bottom: 10px;
+}
+main .underline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .ask-the-agronomists .underline > h6 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+}
+main .underline-admin {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main .partners-backgr {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 210px;
+}
+main .partners-backgr-companies {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+main .partners-backgr > img:nth-child(1) {
+  width: 141px;
+  height: 70px;
+}
+main .partners-backgr > img:nth-child(2) {
+  width: 112px;
+  height: 70px;
+}
+main .we-have-solutions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px;
+  gap: 25px;
+  width: 320px;
+  height: 179px;
+  background: #D9F1E0;
+  border-radius: 5px;
+}
+main .we-have-solutions h3 {
+  width: 220px;
+  height: 54px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #212529;
+}
+main .we-have-solutions h3 span {
+  color: #00730C;
+}
+main .solution {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  width: 154px;
+  height: 40px;
 }
 
 @media (min-width: 768px) {
