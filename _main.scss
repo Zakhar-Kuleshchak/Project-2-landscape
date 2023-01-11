@@ -5,7 +5,7 @@ main {
     .container {
         padding: $padding-2;
     }
-    // стилізація container-fluid
+// стилізація container-fluid
     .container-fluid {
         position: relative;
         background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
@@ -22,6 +22,11 @@ main {
         height: 100%;
         object-fit: cover;
     }
+    .woman-holding-plant:after {
+        display: block;
+        content: '';
+        clear: both;
+    } 
     .how-it-works {
         padding-bottom: 35px;
     } 
@@ -30,7 +35,7 @@ main {
         padding-top: 48px;
         padding-bottom: 10px;
     }
-    .how-it-works > .image-text > h6 {
+    .image-text h6 {
         color: #212529;
         padding-left: 5px;
         font-size: 14px;
@@ -38,7 +43,7 @@ main {
         font-style: normal;
         font-weight: 700;
     }
-    .how-it-works > .title > h1 {
+    .title h1 {
         font-style: normal;
         font-weight: 700;
         font-size: 28px;
@@ -46,7 +51,7 @@ main {
         color: #212529;
         text-align: start;
     }
-    .how-it-works > .description > h6 {
+    .description h6 {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -75,7 +80,7 @@ main {
         background-color: #ffffff;
         color: #00730C;
     }
-        .text-arrow {
+    .text-arrow {
         display: flex;
         justify-content: center;
         color: #00730C;
@@ -86,7 +91,13 @@ main {
         margin-top: 20px;
         cursor: pointer;
     }
-    .how-it-works .text-arrow h6 {
+    .text-arrow img:nth-child(2) {
+        display: none;
+    }
+    .text-arrow img:nth-child(1) {
+        display: inline-block;
+    }
+    .text-arrow h6 {
         padding-right: 12px;
         color: #00730C;
     }
@@ -127,7 +138,7 @@ main {
     .buttons-larger-screen {
         display: none;
     }
-    // далі йде services we provide
+// далі йде services we provide
     .services-we-provide {
         padding-top: 50px;
     }
@@ -397,7 +408,7 @@ main {
     }
 // далі йде малий блок, де на background руки тримають землю з листками
     .our-best-reliable-gardening-background { 
-        background: no-repeat url(images/main/hands\ holding\ leaf.jpg) center center / 100% 224px;
+        background: no-repeat left 35% top 85% url(images/main/hands\ holding\ leafs.svg);
         margin-bottom: 50px;
     } 
     .our-best-reliable-gardening { 
@@ -635,7 +646,7 @@ main {
         color: #676767;
         margin-bottom: 40px;
     }
-    .frequently-asked-questions-backgr .container .questions {
+    .questions {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -697,7 +708,7 @@ main {
         box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
         margin-bottom: 40px;
     }
-    .ask-the-agronomists .planting > h6 {
+    .planting > h6 {
         width: 70px;
         height: 30px;
         font-weight: 600;
@@ -735,7 +746,7 @@ main {
         justify-content: space-between;
         align-items: center;
     } 
-    .ask-the-agronomists .underline > h6 {
+    .underline > h6 {
         font-weight: 700;
         font-size: 14px;
         line-height: 19px;
@@ -775,6 +786,7 @@ main {
         height: 179px;
         background: #D9F1E0;
         border-radius: 5px;
+        margin: auto;
     }
     .we-have-solutions h3 {
         width: 220px;
@@ -799,28 +811,19 @@ main {
         height: 40px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     // tablet
   @media(min-width:768px) {
+main {
     .container-fluid {
-        background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-        background-position-y: 95%;
+        height: 470px;
     }
     .how-it-works {
         padding-bottom: 35px;
     } 
+    .woman-holding-plant {
+        bottom: 0;
+    }
 // стилістика services we provide
     .col-sm-6 {
         display: flex;
@@ -830,6 +833,9 @@ main {
     .services-we-provide p {
         width: 545px;
         margin: auto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
     }
     .service {
         width: 330px;
@@ -863,7 +869,7 @@ main {
         font-size: 24px;
         line-height: 33px;
     }
-    .service-column h6 {
+    .service-column > h6 {
         font-weight: 400;
         font-size: 16px;
         line-height: 28px;
@@ -878,11 +884,6 @@ main {
         font-size: 45px;
         line-height: 61px;
     }
-    .services-we-provide h6 {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-    }
     .service:hover img:nth-child(2) {
         display: inline-block;
     }
@@ -893,7 +894,8 @@ main {
         margin: 0;
     }
     // далі йде why choose us
-    main .why-choose-us-backgr {
+    .why-choose-us-backgr {
+        height: 659px;
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -904,84 +906,104 @@ main {
         justify-content: space-between;
         align-items: center;
     }
-    main .why-choose-us-backgr .container .row .why-choose-us-info h1 {
+    .why-choose-us-info h1 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 61px;
         text-align: left;
         margin-top: 0px;
         margin-bottom: 30px;
     }
-    main .why-choose-us-backgr .container .row .why-choose-us-info h6 {
+    .why-choose-us-info h6 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
         text-align: left;
         margin-bottom: 50px;
     }
-    main .why-choose-us-backgr .container .row .proper-take-care {
+    .proper-take-care {
         margin-bottom: 50px;
     }
-    main .why-choose-us-backgr .container .row .why-choose-us-info > .btn-discover-more {
+    .why-choose-us-info > .btn-discover-more {
         margin-bottom: 0px;
         margin: 0;
     }
-
 // далі йде working process
-    main .working-process-background {
+    .working-process-background {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    .working-process-background .container h1 {
+    .working-process-background h1 {
         font-weight: 800;
         font-size: 45px;
         line-height: 61px;
     }
-    .working-process-background .container p {
+    .working-process-background p {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
     }
-    .working-process-background .working-process h5 {
+    .working-process h5 {
         font-weight: 700;
         font-size: 24px;
         line-height: 33px;
         margin-top: 40px;
         margin-bottom: 20px;
     }
-    .working-process-background .working-process h6 {
+    .working-process h6 {
         font-weight: 400;
         font-size: 18px;
         line-height: 30px;
     }
-    .working-process-background .container .row .working-process {
+    .working-process:nth-child(1) {
         width: 330px;
         height: 408px;
         padding: 50px 31px 70px 29px;
     }
-    .working-process-background .container .row .working-process:nth-child(1) {
+    .working-process:nth-child(2) {
+        width: 330px;
+        height: 408px;
+        padding: 50px 31px 70px 29px;
+    }
+    .working-process:nth-child(3) {
+        width: 330px;
+        height: 408px;
+        padding: 50px 31px 70px 29px;
+    }
+    .working-process:nth-child(4) {
+        width: 330px;
+        height: 408px;
+        padding: 50px 31px 70px 29px;
+    }
+    .working-process:nth-child(1) {
         background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
             right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 1.svg);
     }
-    .working-process-background .container .row .working-process:nth-child(2) {
+    .working-process:nth-child(2) {
         background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
             right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 2.svg);
     }
-    .working-process-background .container .row .working-process:nth-child(3) {
+    .working-process:nth-child(3) {
         background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
             right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 3.svg);
     }
-    .working-process-background .container .row .working-process:nth-child(4) {
+    .working-process:nth-child(4) {
         background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
             right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 4.svg);
     }
-    .working-process-background .container .row .working-process:nth-child(1):hover {
+    .working-process:nth-child(1):hover {
         background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 1\ white.svg),
             right 10% top 50% / 100px no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
     }
-    .working-process-background .container .row .working-process:nth-child(2):hover {
+    .working-process:nth-child(2):hover {
         background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 2\ white.svg),
             right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
     }
-    .working-process-background .container .row .working-process:nth-child(3):hover {
+    .working-process:nth-child(3):hover {
         background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 3\ white.svg),
             right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
     }
-    .working-process-background .container .row .working-process:nth-child(4):hover {
+    .working-process:nth-child(4):hover {
         background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 4\ white.svg),
             right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
     }
@@ -995,44 +1017,40 @@ main {
     }
 // далі йде малий блок, де на background руки тримають землю з листками
     .our-best-reliable-gardening { 
-        display: flex;
-        padding-top: 78px; 
-        padding-bottom: 78px; 
+        margin-left: 350px;
     } 
   }
-
-
-
-
-
-
-
+}
+   
 // laptop-m (md)
   @media(min-width:1024px) {
+main {
     .container {
         max-width: 970px;
         margin: auto;
     }
-
     .woman-holding-plant {
         height: 656px;
         width: 1024px;
     }
-
     .services-we-provide p {
         width: 727px;
     }
-
     .service {
         cursor: pointer;
     }
     .why-choose-us {
         gap: 82px;
     }
+    .our-best-reliable-gardening { 
+        margin-left: 475px;
+    } 
   }
-
+}
+    
 // laptop-l (lg)
-@media(min-width:1200px) {
+    @media(min-width:1200px) {
+main {
     .container {
         max-width: 1170px;
     }
@@ -1046,7 +1064,6 @@ main {
     .col-lg-4 {
         flex-wrap: wrap;
     }
-
     .services-we-provide p {
         width: 852px;
     }
@@ -1055,42 +1072,47 @@ main {
         height: 426px;
     }
     // why choose us
-    main .why-choose-us-backgr {
+    .why-choose-us-backgr {
         height: 659px;
-        padding-top: 100px;
-        padding-bottom: 100px;
     }
+    .our-best-reliable-gardening { 
+        display: flex;
+    } 
+  }
 }
-    // desktop
+    
+// desktop
   @media(min-width:1600px) {
+main {
     .container {
-      max-width: 1410px;
-      margin: auto;
+        max-width: 1410px;
+        margin: auto;
     }
-
     .container-fluid {
+        background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+        background-position-y: 95%;
         height: 719px;
-
     }
     .how-it-works {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 100px;
     }
     .image-text {
         margin-left: 0px;
         padding-top: 87px;
     }
-    .how-it-works .image-text h6 {
+    .image-text h6 {
         font-size: 16px;
         line-height: 20px;
     }
-    .how-it-works .title h1 {
+    .title h1 {
         margin-left: 0px;
         font-size: 58px;
         line-height: 79px;
     }
-    .how-it-works .description h6 {
+    .description h6 {
         margin-left: 0px;
         font-size: 18px;
         line-height: 30px;
@@ -1113,9 +1135,6 @@ main {
         align-items: center;
         flex-wrap: nowrap;
     }
-    .how-it-works .text-arrow h6 {
-        color: #676767;
-    }
     .text-arrow h6 {
         width: 142px;
         color: #676767;
@@ -1130,7 +1149,7 @@ main {
     .buttons {
         display: none;
     }
-    // далі стилістика для кнопок на широкому екрані
+// далі стилістика для кнопок на широкому екрані
     .buttons-larger-screen {
         margin-top: 58px;
         display: flex;
@@ -1168,13 +1187,11 @@ main {
         width: 850px;
         height: 673px;
     }
-
     .woman-holding-plant img {
         width: 850px;
         height: 673px;
     }
-
-    // далі services we provide
+// далі services we provide
     .services-we-provide {
         padding-top: 100px;
     }
@@ -1182,7 +1199,6 @@ main {
         display: flex;
         flex-wrap: wrap;
     }
-
     .service {
         width: 330px;
         height: 366px;
@@ -1197,21 +1213,18 @@ main {
         margin-bottom: 10px;
         cursor: pointer;
     }
-
     .services-we-provide p {
         width: 1136px;
         height: 60px;
         margin: auto;
     }
-
     .service:nth-child(4) {
         margin-right: 0px;
     }
-
     .service:nth-child(8) {
         margin-right: 0px;
     }
-    // стилі для трьох картинок і тексту
+// стилі для трьох картинок і тексту
     .container h1 {
         margin-bottom: 30px;
     }
@@ -1222,32 +1235,32 @@ main {
         background-position-y: 25%;
         background-position-x: -20%;
     }
-    // далі why choose us
-    .why-choose-us-backgr .container .row .why-choose-us-info h1 {
+// далі why choose us
+    .why-choose-us-info h1 {
         font-weight: 700;
         font-size: 45px;
         line-height: 61px;
         margin-top: 0px;
     }
-    .why-choose-us-backgr .container .row .why-choose-us-info h6 {
+    .why-choose-us-info h6 {
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 50px;
     }
-    .why-choose-us-backgr .container .row .why-choose-us-info .proper {
+    .proper {
         gap: 20px;
         width: 242px;
     }
-    .why-choose-us-backgr .container .row .why-choose-us-info .proper h5 {
+    .proper h5 {
         font-weight: 700;
         font-size: 24px;
         line-height: 33px;
     } 
-    .why-choose-us-backgr .container .row .why-choose-us-info .checkmark {
+    .checkmark {
         width: 30px;
         height: 30px;
     }
-    .why-choose-us-backgr .container .row .why-choose-us-info .proper-take-care {
+    .proper-take-care {
         gap: 20px 118px;
         margin-bottom: 50px;
     }
@@ -1265,6 +1278,23 @@ main {
     }
 // далі йде малий блок, де на background руки тримають землю з листками
     .our-best-reliable-gardening {
-        margin-left: 647px;
+        margin-left: 610px;
+        align-items: center;
+    }
+    .our-best-reliable-gardening h3 {
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 45px;
+        width: 448px;
+        height: 90px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .btn-call-us-button {
+        width: 170px;
+        height: 50px;
+        margin-left: 85px;
     }
   }
+}
+    

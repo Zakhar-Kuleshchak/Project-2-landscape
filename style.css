@@ -204,6 +204,11 @@ main .woman-holding-plant img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .woman-holding-plant:after {
+  display: block;
+  content: "";
+  clear: both;
+}
 main .how-it-works {
   padding-bottom: 35px;
 }
@@ -212,7 +217,7 @@ main .image-text {
   padding-top: 48px;
   padding-bottom: 10px;
 }
-main .how-it-works > .image-text > h6 {
+main .image-text h6 {
   color: #212529;
   padding-left: 5px;
   font-size: 14px;
@@ -220,7 +225,7 @@ main .how-it-works > .image-text > h6 {
   font-style: normal;
   font-weight: 700;
 }
-main .how-it-works > .title > h1 {
+main .title h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -228,7 +233,7 @@ main .how-it-works > .title > h1 {
   color: #212529;
   text-align: start;
 }
-main .how-it-works > .description > h6 {
+main .description h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -268,7 +273,13 @@ main .text-arrow {
   margin-top: 20px;
   cursor: pointer;
 }
-main .how-it-works .text-arrow h6 {
+main .text-arrow img:nth-child(2) {
+  display: none;
+}
+main .text-arrow img:nth-child(1) {
+  display: inline-block;
+}
+main .text-arrow h6 {
   padding-right: 12px;
   color: #00730C;
 }
@@ -565,7 +576,7 @@ main .working-process h5 {
   color: #212529;
 }
 main .our-best-reliable-gardening-background {
-  background: no-repeat url(images/main/hands\ holding\ leaf.jpg) center center/100% 224px;
+  background: no-repeat left 35% top 85% url(images/main/hands\ holding\ leafs.svg);
   margin-bottom: 50px;
 }
 main .our-best-reliable-gardening {
@@ -801,7 +812,7 @@ main .frequently-asked-questions-backgr p {
   color: #676767;
   margin-bottom: 40px;
 }
-main .frequently-asked-questions-backgr .container .questions {
+main .questions {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -862,7 +873,7 @@ main .planting {
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
 }
-main .ask-the-agronomists .planting > h6 {
+main .planting > h6 {
   width: 70px;
   height: 30px;
   font-weight: 600;
@@ -900,7 +911,7 @@ main .underline {
   justify-content: space-between;
   align-items: center;
 }
-main .ask-the-agronomists .underline > h6 {
+main .underline > h6 {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
@@ -939,6 +950,7 @@ main .we-have-solutions {
   height: 179px;
   background: #D9F1E0;
   border-radius: 5px;
+  margin: auto;
 }
 main .we-have-solutions h3 {
   width: 220px;
@@ -964,23 +976,28 @@ main .solution {
 }
 
 @media (min-width: 768px) {
-  .container-fluid {
-    background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-    background-position-y: 95%;
+  main .container-fluid {
+    height: 470px;
   }
-  .how-it-works {
+  main .how-it-works {
     padding-bottom: 35px;
   }
-  .col-sm-6 {
+  main .woman-holding-plant {
+    bottom: 0;
+  }
+  main .col-sm-6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .services-we-provide p {
+  main .services-we-provide p {
     width: 545px;
     margin: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
   }
-  .service {
+  main .service {
     width: 330px;
     height: 366px;
     display: flex;
@@ -994,77 +1011,79 @@ main .solution {
     background: no-repeat url(images/main/XMLID_46_white.svg);
     background-position: 80px 25px;
   }
-  .service:hover {
+  main .service:hover {
     background: url(images/main/XMLID_46_.svg);
     color: white;
     border-radius: 10px;
   }
-  .service:hover h6 {
+  main .service:hover h6 {
     color: white;
   }
-  .service-column {
+  main .service-column {
     margin: 0 auto;
     text-align: center;
   }
-  .service-column h5 {
+  main .service-column h5 {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
   }
-  .service-column h6 {
+  main .service-column > h6 {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
   }
-  .service img {
+  main .service img {
     width: 70px;
     height: 70px;
     margin-bottom: 50px;
   }
-  .services-we-provide h1 {
+  main .services-we-provide h1 {
     font-weight: 800;
     font-size: 45px;
     line-height: 61px;
   }
-  .services-we-provide h6 {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .service:hover img:nth-child(2) {
+  main .service:hover img:nth-child(2) {
     display: inline-block;
   }
-  .service:hover img:nth-child(1) {
+  main .service:hover img:nth-child(1) {
     display: none;
   }
-  .btn-discover-more {
+  main .btn-discover-more {
     margin: 0;
   }
   main .why-choose-us-backgr {
+    height: 659px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .why-choose-us {
+  main .why-choose-us {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
-  main .why-choose-us-backgr .container .row .why-choose-us-info h1 {
+  main .why-choose-us-info h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
     text-align: left;
     margin-top: 0px;
     margin-bottom: 30px;
   }
-  main .why-choose-us-backgr .container .row .why-choose-us-info h6 {
+  main .why-choose-us-info h6 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
     text-align: left;
     margin-bottom: 50px;
   }
-  main .why-choose-us-backgr .container .row .proper-take-care {
+  main .proper-take-care {
     margin-bottom: 50px;
   }
-  main .why-choose-us-backgr .container .row .why-choose-us-info > .btn-discover-more {
+  main .why-choose-us-info > .btn-discover-more {
     margin-bottom: 0px;
     margin: 0;
   }
@@ -1072,159 +1091,179 @@ main .solution {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .working-process-background .container h1 {
+  main .working-process-background h1 {
     font-weight: 800;
     font-size: 45px;
     line-height: 61px;
   }
-  .working-process-background .container p {
+  main .working-process-background p {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
   }
-  .working-process-background .working-process h5 {
+  main .working-process h5 {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
     margin-top: 40px;
     margin-bottom: 20px;
   }
-  .working-process-background .working-process h6 {
+  main .working-process h6 {
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
   }
-  .working-process-background .container .row .working-process {
+  main .working-process:nth-child(1) {
     width: 330px;
     height: 408px;
     padding: 50px 31px 70px 29px;
   }
-  .working-process-background .container .row .working-process:nth-child(1) {
+  main .working-process:nth-child(2) {
+    width: 330px;
+    height: 408px;
+    padding: 50px 31px 70px 29px;
+  }
+  main .working-process:nth-child(3) {
+    width: 330px;
+    height: 408px;
+    padding: 50px 31px 70px 29px;
+  }
+  main .working-process:nth-child(4) {
+    width: 330px;
+    height: 408px;
+    padding: 50px 31px 70px 29px;
+  }
+  main .working-process:nth-child(1) {
     background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 1.svg);
   }
-  .working-process-background .container .row .working-process:nth-child(2) {
+  main .working-process:nth-child(2) {
     background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 2.svg);
   }
-  .working-process-background .container .row .working-process:nth-child(3) {
+  main .working-process:nth-child(3) {
     background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 3.svg);
   }
-  .working-process-background .container .row .working-process:nth-child(4) {
+  main .working-process:nth-child(4) {
     background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 4.svg);
   }
-  .working-process-background .container .row .working-process:nth-child(1):hover {
+  main .working-process:nth-child(1):hover {
     background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 1\ white.svg), right 10% top 50%/100px no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
   }
-  .working-process-background .container .row .working-process:nth-child(2):hover {
+  main .working-process:nth-child(2):hover {
     background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 2\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
   }
-  .working-process-background .container .row .working-process:nth-child(3):hover {
+  main .working-process:nth-child(3):hover {
     background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 3\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
   }
-  .working-process-background .container .row .working-process:nth-child(4):hover {
+  main .working-process:nth-child(4):hover {
     background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 4\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
   }
-  .working-process img:nth-child(1) {
+  main .working-process img:nth-child(1) {
     width: 70px;
     height: 70px;
   }
-  .working-process:hover img:nth-child(2) {
+  main .working-process:hover img:nth-child(2) {
     width: 70px;
     height: 70px;
   }
-  .our-best-reliable-gardening {
-    display: flex;
-    padding-top: 78px;
-    padding-bottom: 78px;
+  main .our-best-reliable-gardening {
+    margin-left: 350px;
   }
 }
 @media (min-width: 1024px) {
-  .container {
+  main .container {
     max-width: 970px;
     margin: auto;
   }
-  .woman-holding-plant {
+  main .woman-holding-plant {
     height: 656px;
     width: 1024px;
   }
-  .services-we-provide p {
+  main .services-we-provide p {
     width: 727px;
   }
-  .service {
+  main .service {
     cursor: pointer;
   }
-  .why-choose-us {
+  main .why-choose-us {
     gap: 82px;
+  }
+  main .our-best-reliable-gardening {
+    margin-left: 475px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  main .container {
     max-width: 1170px;
   }
-  .woman-holding-plant {
+  main .woman-holding-plant {
     height: 384px;
     width: 600px;
     position: absolute;
     right: 0;
     bottom: 0;
   }
-  .col-lg-4 {
+  main .col-lg-4 {
     flex-wrap: wrap;
   }
-  .services-we-provide p {
+  main .services-we-provide p {
     width: 852px;
   }
-  .young-woman-taking-care-her-plants img {
+  main .young-woman-taking-care-her-plants img {
     width: 672px;
     height: 426px;
   }
   main .why-choose-us-backgr {
     height: 659px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+  }
+  main .our-best-reliable-gardening {
+    display: flex;
   }
 }
 @media (min-width: 1600px) {
-  .container {
+  main .container {
     max-width: 1410px;
     margin: auto;
   }
-  .container-fluid {
+  main .container-fluid {
+    background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
+    background-position-y: 95%;
     height: 719px;
   }
-  .how-it-works {
+  main .how-it-works {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 100px;
   }
-  .image-text {
+  main .image-text {
     margin-left: 0px;
     padding-top: 87px;
   }
-  .how-it-works .image-text h6 {
+  main .image-text h6 {
     font-size: 16px;
     line-height: 20px;
   }
-  .how-it-works .title h1 {
+  main .title h1 {
     margin-left: 0px;
     font-size: 58px;
     line-height: 79px;
   }
-  .how-it-works .description h6 {
+  main .description h6 {
     margin-left: 0px;
     font-size: 18px;
     line-height: 30px;
   }
-  .btn-how-it-works {
+  main .btn-how-it-works {
     margin: 0 0;
     width: 175px;
     height: 50px;
     font-size: 18px;
     line-height: 24px;
   }
-  .row-btn-how-it-works-text-arrow {
+  main .row-btn-how-it-works-text-arrow {
     display: flex;
   }
-  .text-arrow {
+  main .text-arrow {
     margin-top: 0px;
     margin-left: 30px;
     width: 159px;
@@ -1232,34 +1271,31 @@ main .solution {
     align-items: center;
     flex-wrap: nowrap;
   }
-  .how-it-works .text-arrow h6 {
-    color: #676767;
-  }
-  .text-arrow h6 {
+  main .text-arrow h6 {
     width: 142px;
     color: #676767;
   }
-  .text-arrow img {
+  main .text-arrow img {
     width: 20px;
     height: 15px;
   }
-  .text-arrow img:nth-child(2) {
+  main .text-arrow img:nth-child(2) {
     display: none;
   }
-  .buttons {
+  main .buttons {
     display: none;
   }
-  .buttons-larger-screen {
+  main .buttons-larger-screen {
     margin-top: 58px;
     display: flex;
   }
-  .button-larger-screen {
+  main .button-larger-screen {
     width: 149px;
     height: 50px;
     display: flex;
     align-items: center;
   }
-  .quantity-text {
+  main .quantity-text {
     margin-left: 10px;
     width: 89px;
     height: 40px;
@@ -1269,7 +1305,7 @@ main .solution {
     text-transform: capitalize;
     color: #212529;
   }
-  .quantity {
+  main .quantity {
     width: 50px;
     height: 50px;
     background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
@@ -1282,22 +1318,22 @@ main .solution {
     align-items: center;
     color: #212529;
   }
-  .woman-holding-plant {
+  main .woman-holding-plant {
     width: 850px;
     height: 673px;
   }
-  .woman-holding-plant img {
+  main .woman-holding-plant img {
     width: 850px;
     height: 673px;
   }
-  .services-we-provide {
+  main .services-we-provide {
     padding-top: 100px;
   }
-  .col-xl-3 {
+  main .col-xl-3 {
     display: flex;
     flex-wrap: wrap;
   }
-  .service {
+  main .service {
     width: 330px;
     height: 366px;
     display: flex;
@@ -1311,67 +1347,82 @@ main .solution {
     margin-bottom: 10px;
     cursor: pointer;
   }
-  .services-we-provide p {
+  main .services-we-provide p {
     width: 1136px;
     height: 60px;
     margin: auto;
   }
-  .service:nth-child(4) {
+  main .service:nth-child(4) {
     margin-right: 0px;
   }
-  .service:nth-child(8) {
+  main .service:nth-child(8) {
     margin-right: 0px;
   }
-  .container h1 {
+  main .container h1 {
     margin-bottom: 30px;
   }
-  .images-block-experience {
+  main .images-block-experience {
     margin-top: 100px;
     display: block;
     background: no-repeat url(images/main/Fern.svg);
     background-position-y: 25%;
     background-position-x: -20%;
   }
-  .why-choose-us-backgr .container .row .why-choose-us-info h1 {
+  main .why-choose-us-info h1 {
     font-weight: 700;
     font-size: 45px;
     line-height: 61px;
     margin-top: 0px;
   }
-  .why-choose-us-backgr .container .row .why-choose-us-info h6 {
+  main .why-choose-us-info h6 {
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 50px;
   }
-  .why-choose-us-backgr .container .row .why-choose-us-info .proper {
+  main .proper {
     gap: 20px;
     width: 242px;
   }
-  .why-choose-us-backgr .container .row .why-choose-us-info .proper h5 {
+  main .proper h5 {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
   }
-  .why-choose-us-backgr .container .row .why-choose-us-info .checkmark {
+  main .checkmark {
     width: 30px;
     height: 30px;
   }
-  .why-choose-us-backgr .container .row .why-choose-us-info .proper-take-care {
+  main .proper-take-care {
     gap: 20px 118px;
     margin-bottom: 50px;
   }
-  .btn-discover-more {
+  main .btn-discover-more {
     height: 50px;
     width: 190px;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
   }
-  .working-process-background p {
+  main .working-process-background p {
     width: 1136px;
     margin: auto;
   }
-  .our-best-reliable-gardening {
-    margin-left: 647px;
+  main .our-best-reliable-gardening {
+    margin-left: 610px;
+    align-items: center;
+  }
+  main .our-best-reliable-gardening h3 {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 45px;
+    width: 448px;
+    height: 90px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  main .btn-call-us-button {
+    width: 170px;
+    height: 50px;
+    margin-left: 85px;
   }
 }/*# sourceMappingURL=style.css.map */
