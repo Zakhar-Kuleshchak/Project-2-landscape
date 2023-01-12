@@ -397,6 +397,7 @@ main .container h6 {
 }
 main .three-pictures {
   position: relative;
+  height: 492px;
 }
 main .three-pictures img:nth-child(1) {
   width: 188px;
@@ -1077,11 +1078,30 @@ main .solution {
   main .btn-discover-more {
     margin: 0;
   }
+  main .images-block-experience {
+    height: 850px;
+  }
   main .three-pictures {
     min-width: 50%;
   }
+  main .services {
+    margin-bottom: 30px;
+  }
   main .services-about-company {
     max-width: 50%;
+  }
+  main .service-about-company {
+    cursor: pointer;
+  }
+  main .service-about-company:hover {
+    background-color: #00730C;
+  }
+  main .service-about-company:hover img {
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+  main .service-about-company:hover h6 {
+    color: #FFFFFF;
   }
   main .why-choose-us-backgr {
     height: 659px;
@@ -1241,6 +1261,9 @@ main .solution {
   main .young-woman-taking-care-her-plants img {
     width: 672px;
     height: 426px;
+  }
+  main .services {
+    width: 525px;
   }
   main .why-choose-us-backgr {
     height: 659px;
@@ -1410,7 +1433,7 @@ main .solution {
     height: 741px;
   }
   main .three-pictures img:nth-child(3) {
-    left: 237px;
+    left: 230px;
     top: 597px;
     width: 456px;
     height: 356px;
@@ -1434,10 +1457,26 @@ main .solution {
   main .services {
     gap: 30px;
     width: 690px;
+    margin-bottom: 50px;
   }
   main .service-about-company {
     width: 330px;
     height: 97px;
+    flex-direction: row;
+  }
+  main .service-about-company img {
+    width: 67px;
+    height: 67px;
+  }
+  main .service-about-company h6 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    width: 198px;
+    height: 33px;
+  }
+  main .why-choose-us-backgr {
+    background: no-repeat center center url(images/main/why\ choose\ us\ backgr.svg);
   }
   main .why-choose-us-info h1 {
     font-weight: 700;

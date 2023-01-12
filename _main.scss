@@ -217,6 +217,7 @@ main {
     } 
     .three-pictures {
         position: relative;
+        height: 492px;
     }
     .three-pictures img:nth-child(1) {
         // position: absolute;
@@ -919,11 +920,30 @@ main {
         margin: 0;
     }
     // далі йде блок з трьома картинками і текстом
+    .images-block-experience {
+        height: 850px;
+    }
     .three-pictures {
         min-width: 50%;
     }
+    .services {
+        margin-bottom: 30px;
+    }
     .services-about-company {
         max-width: 50%;
+    }
+    .service-about-company {
+        cursor: pointer;
+    }
+    .service-about-company:hover {
+        background-color: #00730C;
+    }
+    .service-about-company:hover img {
+        border: 1px solid white;
+        border-radius: 50%;
+    }
+    .service-about-company:hover h6 {
+        color: #FFFFFF;
     }
     // далі йде why choose us
     .why-choose-us-backgr {
@@ -1103,6 +1123,10 @@ main {
         width: 672px;
         height: 426px;
     }
+    // далі йде блок з трьома картинками і текстом
+    .services {
+        width: 525px;
+    }
     // why choose us
     .why-choose-us-backgr {
         height: 659px;
@@ -1279,7 +1303,7 @@ main {
         height: 741px;
     }
     .three-pictures img:nth-child(3) {
-        left: 237px;
+        left: 230px;
         top: 597px;
         width: 456px;
         height: 356px;
@@ -1303,13 +1327,28 @@ main {
     .services {
         gap: 30px;
         width: 690px;
+        margin-bottom: 50px;
     }
     .service-about-company {
         width: 330px;
         height: 97px;
-        // flex-direction: row;
+        flex-direction: row;
+    }
+    .service-about-company img {
+        width: 67px;
+        height: 67px;
+    }
+    .service-about-company h6 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        width: 198px;
+        height: 33px;
     }
 // далі why choose us
+    .why-choose-us-backgr {
+        background: no-repeat center center url(images/main/why\ choose\ us\ backgr.svg);
+    }
     .why-choose-us-info h1 {
         font-weight: 700;
         font-size: 45px;
