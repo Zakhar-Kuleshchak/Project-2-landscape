@@ -188,26 +188,21 @@ main .container {
   padding: 0px 15px 0px 15px;
 }
 main .container-fluid {
-  position: relative;
   background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
   height: 710px;
 }
 main .woman-holding-plant {
   height: 240px;
   width: 375px;
-  position: absolute;
-  right: 0;
+  position: relative;
 }
 main .woman-holding-plant img {
+  position: absolute;
+  right: 15px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-main .woman-holding-plant:after {
-  display: block;
-  content: "";
-  clear: both;
 }
 main .how-it-works {
   padding-bottom: 35px;
@@ -249,23 +244,23 @@ main .btn-how-it-works {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00730C;
+  background-color: #00730c;
   color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  border: 1px solid #00730C;
+  border: 1px solid #00730c;
   border-radius: 5px;
 }
 main .btn-how-it-works:hover {
   background-color: #ffffff;
-  color: #00730C;
+  color: #00730c;
 }
 main .text-arrow {
   display: flex;
   justify-content: center;
-  color: #00730C;
+  color: #00730c;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -281,7 +276,7 @@ main .text-arrow img:nth-child(1) {
 }
 main .text-arrow h6 {
   padding-right: 12px;
-  color: #00730C;
+  color: #00730c;
 }
 main .buttons {
   display: flex;
@@ -291,14 +286,14 @@ main .buttons {
 main .btn-happy-customrs {
   width: 133px;
   height: 32px;
-  background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
+  background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
   border-radius: 32px;
   border: none;
 }
 main .btn-garden-created {
   width: 128px;
   height: 32px;
-  background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
+  background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
   border-radius: 32px;
   border: none;
   margin-right: 1px;
@@ -333,7 +328,7 @@ main .services-we-provide > h1 {
   margin-bottom: 15px;
 }
 main .services-we-provide span {
-  color: #00730C;
+  color: #00730c;
 }
 main .services-we-provide > h6 {
   font-weight: 400;
@@ -388,7 +383,7 @@ main .container h1 {
   margin-bottom: 15px;
 }
 main .container h1 span {
-  color: #00730C;
+  color: #00730c;
 }
 main .container h6 {
   font-size: 14px;
@@ -432,7 +427,7 @@ main .service-about-company {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
 }
@@ -455,33 +450,33 @@ main .btn-discover-more {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00730C;
+  background-color: #00730c;
   color: white;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  border: 1px solid #00730C;
+  border: 1px solid #00730c;
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 50px;
 }
 main .btn-discover-more:hover {
-  background-color: #FFFFFF;
-  color: #00730C;
-  border-color: #00730C;
+  background-color: #ffffff;
+  color: #00730c;
+  border-color: #00730c;
 }
 main .why-choose-us-backgr {
-  background: #0C4B35;
+  background: #0c4b35;
   padding-top: 50px;
   height: 684px;
 }
 main .why-choose-us h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 30px;
 }
 main .why-choose-us h6 {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -495,7 +490,7 @@ main .checkmark {
   display: flex;
   width: 20px;
   height: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
 }
 main .checkmark img {
@@ -504,7 +499,7 @@ main .checkmark img {
 main .proper h5 {
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 main .proper-take-care {
   display: flex;
@@ -529,7 +524,7 @@ main .working-process:nth-child(1) {
   width: 345px;
   height: 208px;
   padding: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
   background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1.svg);
@@ -540,7 +535,7 @@ main .working-process:nth-child(2) {
   width: 345px;
   height: 208px;
   padding: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
   background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2.svg);
@@ -551,7 +546,7 @@ main .working-process:nth-child(3) {
   width: 345px;
   height: 208px;
   padding: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
   background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3.svg);
@@ -562,7 +557,7 @@ main .working-process:nth-child(4) {
   width: 345px;
   height: 208px;
   padding: 20px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 10px;
   background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4.svg);
@@ -575,22 +570,22 @@ main .working-process:hover img:nth-child(2) {
   display: inline-block;
 }
 main .working-process:hover h5 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 main .working-process:hover h6 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 main .working-process:nth-child(1):hover {
-  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
 }
 main .working-process:nth-child(2):hover {
-  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
 }
 main .working-process:nth-child(3):hover {
-  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
 }
 main .working-process:nth-child(4):hover {
-  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+  background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
 }
 main .working-process h5 {
   margin-top: 20px;
@@ -616,7 +611,7 @@ main .our-best-reliable-gardening h3 {
   line-height: 27px;
   margin-left: 41px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 30px;
 }
 main .btn-call-us-button {
@@ -629,13 +624,13 @@ main .btn-call-us-button {
   gap: 10px;
   width: 137px;
   height: 40px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
   border-radius: 5px;
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-  color: #00730C;
+  color: #00730c;
   margin-left: 108px;
 }
 main .our-trained-staff-background p {
@@ -676,7 +671,10 @@ main .slides {
   position: absolute;
   width: inherit;
 }
-main .slide1, main .slide2, main .slide3, main .slide4 {
+main .slide1,
+main .slide2,
+main .slide3,
+main .slide4 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -704,7 +702,7 @@ main .slide4 {
   background-size: 100%;
 }
 main .staffInfo {
-  background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+  background: linear-gradient(6.68deg, #00730c 4.95%, rgba(251, 246, 238, 0) 264.79%);
   border-radius: 5px;
   width: 100%;
   height: 62px;
@@ -720,14 +718,14 @@ main .staffInfo h4 {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 main .staffInfo h6 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 main .staff .controls {
   height: 10px;
@@ -748,7 +746,7 @@ main .staff label {
   border-radius: 8px;
 }
 main .staff label:after {
-  border: 2px solid #00730C;
+  border: 2px solid #00730c;
   border-radius: 8px;
   content: " ";
   display: block;
@@ -760,7 +758,7 @@ main #slide1:checked ~ .controls label:nth-of-type(1),
 main #slide2:checked ~ .controls label:nth-of-type(2),
 main #slide3:checked ~ .controls label:nth-of-type(3),
 main #slide4:checked ~ .controls label:nth-of-type(4) {
-  background: #00730C;
+  background: #00730c;
 }
 main .slides {
   height: inherit;
@@ -782,7 +780,7 @@ main #slide4:checked ~ .slider > .slide4 {
 main .what-clients-saying-backgr {
   height: 585px;
   padding-top: 50px;
-  background: #E6F6EA;
+  background: #e6f6ea;
   box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
   -webkit-backdrop-filter: blur(36.378px);
           backdrop-filter: blur(36.378px);
@@ -797,7 +795,7 @@ main .what-clients-saying-backgr p {
 }
 main .client-response {
   margin: auto;
-  background: #FFFFFF;
+  background: #ffffff;
   width: 345px;
   padding: 20px;
   box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
@@ -848,7 +846,7 @@ main .question {
   align-items: center;
   width: 345px;
   height: 44px;
-  background: #FFF8F1;
+  background: #fff8f1;
   border-radius: 3px;
 }
 main .question h6 {
@@ -894,7 +892,7 @@ main .planting {
   gap: 10px;
   width: 122px;
   height: 30px;
-  background: #D9F1E0;
+  background: #d9f1e0;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
 }
@@ -905,7 +903,7 @@ main .planting > h6 {
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #00730C;
+  color: #00730c;
 }
 main .ask-the-agronomists h5 {
   width: 277px;
@@ -913,7 +911,7 @@ main .ask-the-agronomists h5 {
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  color: #00730C;
+  color: #00730c;
   margin-bottom: 15px;
 }
 main .ask-the-agronomists > h6 {
@@ -928,7 +926,7 @@ main .ask-the-agronomists > h6 {
 main .line {
   width: 305px;
   height: 1px;
-  background: #E3E3E3;
+  background: #e3e3e3;
   margin-bottom: 10px;
 }
 main .underline {
@@ -973,7 +971,7 @@ main .we-have-solutions {
   gap: 25px;
   width: 320px;
   height: 179px;
-  background: #D9F1E0;
+  background: #d9f1e0;
   border-radius: 5px;
   margin: auto;
 }
@@ -987,7 +985,7 @@ main .we-have-solutions h3 {
   color: #212529;
 }
 main .we-have-solutions h3 span {
-  color: #00730C;
+  color: #00730c;
 }
 main .solution {
   display: flex;
@@ -1005,9 +1003,12 @@ main .solution {
     height: 470px;
   }
   main .how-it-works {
-    padding-bottom: 35px;
+    max-width: 50%;
   }
   main .woman-holding-plant {
+    max-width: 50%;
+  }
+  main .woman-holding-plant img {
     bottom: 0;
   }
   main .col-sm-6 {
@@ -1094,14 +1095,14 @@ main .solution {
     cursor: pointer;
   }
   main .service-about-company:hover {
-    background-color: #00730C;
+    background-color: #00730c;
   }
   main .service-about-company:hover img {
     border: 1px solid white;
     border-radius: 50%;
   }
   main .service-about-company:hover h6 {
-    color: #FFFFFF;
+    color: #ffffff;
   }
   main .why-choose-us-backgr {
     height: 659px;
@@ -1196,16 +1197,16 @@ main .solution {
     background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 4.svg);
   }
   main .working-process:nth-child(1):hover {
-    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 1\ white.svg), right 10% top 50%/100px no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 1\ white.svg), right 10% top 50%/100px no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
   }
   main .working-process:nth-child(2):hover {
-    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 2\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 2\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
   }
   main .working-process:nth-child(3):hover {
-    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 3\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 3\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
   }
   main .working-process:nth-child(4):hover {
-    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 4\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+    background: right 5% top 15%/60px no-repeat url(images/main/working\ process\ background\ 4\ white.svg), right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730c;
   }
   main .working-process img:nth-child(1) {
     width: 70px;
@@ -1361,7 +1362,7 @@ main .solution {
   main .quantity {
     width: 50px;
     height: 50px;
-    background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
+    background: linear-gradient(72.71deg, #00730c -83.5%, #f9f9f9 93.84%);
     border-radius: 35px;
     padding: 15px 7px;
     font-weight: 700;
