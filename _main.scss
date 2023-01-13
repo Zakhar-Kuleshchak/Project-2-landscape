@@ -1,1413 +1,1472 @@
 main {
-    font-family: "Nunito", sans-serif;
-    margin: auto;
+  font-family: "Nunito", sans-serif;
+  margin: auto;
+  width: 100%;
+  .container {
+    padding: $padding-2;
+  }
+  // стилізація container-fluid
+  .container-fluid {
+    position: relative;
+    background: linear-gradient(
+      39.89deg,
+      rgba(0, 115, 12, 0.81) -22.86%,
+      rgba(251, 246, 238, 0) 116.18%
+    );
+    height: 710px;
+  }
+  .woman-holding-plant {
+    height: 240px;
+    width: 375px;
+    position: absolute;
+    right: 0;
+  }
+  .woman-holding-plant img {
     width: 100%;
-    .container {
-        padding: $padding-2;
-    }
-// стилізація container-fluid
-    .container-fluid {
-        position: relative;
-        background: linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-        height: 710px;
-    }
-    .woman-holding-plant {
-        height: 240px;
-        width: 375px;
-        position: absolute;
-        right: 0;
-    }
-    .woman-holding-plant img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .woman-holding-plant:after {
-        display: block;
-        content: '';
-        clear: both;
-    } 
-    .how-it-works {
-        padding-bottom: 35px;
-    } 
-    .image-text {
-        display: flex;
-        padding-top: 48px;
-        padding-bottom: 10px;
-    }
-    .image-text h6 {
-        color: #212529;
-        padding-left: 5px;
-        font-size: 14px;
-        line-height: 19px;
-        font-style: normal;
-        font-weight: 700;
-    }
-    .title h1 {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 38px;
-        color: #212529;
-        text-align: start;
-    }
-    .description h6 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        padding-bottom: 40px;
-        color: #212529;
-    }
-    .btn-how-it-works {
-        height: 44px;
-        width: 303px;
-        cursor: pointer;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #00730C;
-        color: white;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        border: 1px solid #00730C;
-        border-radius: 5px;
-    }
-    .btn-how-it-works:hover {
-        background-color: #ffffff;
-        color: #00730C;
-    }
-    .text-arrow {
-        display: flex;
-        justify-content: center;
-        color: #00730C;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-        margin-top: 20px;
-        cursor: pointer;
-    }
-    .text-arrow img:nth-child(2) {
-        display: none;
-    }
-    .text-arrow img:nth-child(1) {
-        display: inline-block;
-    }
-    .text-arrow h6 {
-        padding-right: 12px;
-        color: #00730C;
-    }
-    .buttons {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 40px;
-    }
-    .btn-happy-customrs {
-        width: 133px;
-        height: 32px;
-        background: linear-gradient(180deg, #FFF8F1 0%, #CBE5CE 100%);
-        border-radius: 32px;
-        border: none;
-    }
-    .btn-garden-created {
-        width: 128px;
-        height: 32px;
-        background: linear-gradient(180deg, #FFF8F1 0%, #D7E8D9 100%);
-        border-radius: 32px;
-        border: none;
-        margin-right: 1px;
-        margin-left: 12px;
-    }
-    .quantity-members {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 16px;
-        color: #212529;
-    }
-    .quantity-text {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10px;
-        line-height: 14px;
-    }
-    .buttons-larger-screen {
-        display: none;
-    }
-// далі йде services we provide
-    .services-we-provide {
-        padding-top: 50px;
-    }
-    .services-we-provide > h1 {
-        display: flex;
-        justify-content: center;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 38px;
-        color: #212529;
-        margin-bottom: 15px;
-    } 
-    .services-we-provide span {
-        color: #00730C;
-    }
-    .services-we-provide > h6 {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-    .service {
-        display: flex;    
-        margin-top: 20px;
-        margin-bottom: 20px;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 10px;
-    }
-    .service-column {
-        margin-left: 20px;   
-    }
-    .service-column > h5 {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .service-column > h6 {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-    }
-    .service img:nth-child(2) {
-        display: none;
-    }
-    .services-we-provide p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #676767;
-    }
-    // стилі для трьох картинок і тексту з mission і vision
-    .images-block-experience {
-        background: white;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        height: 1331px;
-        margin-top: 0px;
-    }
-    .container h1 {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 38px;
-        color: #212529;
-        text-align: center;
-        margin-bottom: 15px;
-    }
-    .container h1 span {
-        color: #00730C;
-    }
-    .container h6 {
-        font-size: 14px;
-        line-height: 22px;
-        color: #676767;
-    } 
-    .three-pictures {
-        position: relative;
-        height: 492px;
-    }
-    .three-pictures img:nth-child(1) {
-        // position: absolute;
-        width: 188px;
-        height: 293px;
-    }
-    .three-pictures img:nth-child(2) {
-        position: absolute;
-        left: 12px;
-        top: 12px;
-        width: 291px;
-        height: 358px;
-    }
-    .three-pictures img:nth-child(3) {
-        position: absolute;
-        left: 103px;
-        top: 300px;
-        width: 241px;
-        height: 162px;
-    }
-    // стилі для mission i vision
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 40px;
-        gap: 20px;
-    }
-    .service-about-company {
-        width: 162px;
-        height: 94px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #FFFFFF;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 5px;
-    }
-    .service-about-company img {
-        width: 40px;
-        height: 40px;
-    }
-    .service-about-company h6 {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 19px;
-        text-align: center;
-        color: #212529;
-    }
-    .btn-discover-more {
-        height: 40px;
-        width: 167px;
-        cursor: pointer;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #00730C;
-        color: white;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        border: 1px solid #00730C;
-        border-radius: 5px;
-        margin-top: 10px;
-        margin-bottom: 50px;
-    }
-    .btn-discover-more:hover {
-        background-color: #FFFFFF;
-        color: #00730C;
-        border-color: #00730C;
-    }
-    // далі why-choose-us
-    .why-choose-us-backgr {
-        background: #0C4B35;
-        padding-top: 50px;
-        height: 684px;
-    }
-    .why-choose-us h1 {
-        color: #FFFFFF;
-        margin-top: 30px;
-    }
-    .why-choose-us h6 {
-        color: #FFFFFF;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    .proper {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 158px;
-    }
-    .checkmark {
-        display: flex;
-        width: 20px;
-        height: 20px;
-        background: #FFFFFF;
-        border-radius: 50%;
-    }
-    .checkmark img {
-        margin: auto;
-    }
-    .proper h5 {
-        font-size: 16px;
-        line-height: 22px;
-        color: #FFFFFF;
-    } 
-    .proper-take-care {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px 29px;
-        margin-bottom: 30px;
-    }
-    // далі йде working process
-    .working-process-background {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .working-process-background p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #676767;
-        margin-bottom: 30px;
-    } 
-    .working-process:nth-child(1) {
-        cursor: pointer;
-        width: 345px;
-        height: 208px;
-        padding: 20px;
-        background: #FFFFFF;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 10px;
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
-            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1.svg);
-        margin-bottom: 20px;
-    }
-    .working-process:nth-child(2) {
-        cursor: pointer;
-        width: 345px;
-        height: 208px;
-        padding: 20px;
-        background: #FFFFFF;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 10px;
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg),
-            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2.svg);
-        margin-bottom: 20px;
-    }
-    .working-process:nth-child(3) {
-        cursor: pointer;
-        width: 345px;
-        height: 208px;
-        padding: 20px;
-        background: #FFFFFF;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 10px;
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg),
-            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3.svg);
-        margin-bottom: 20px;
-    }
-    .working-process:nth-child(4) {
-        cursor: pointer;
-        width: 345px;
-        height: 208px;
-        padding: 20px;
-        background: #FFFFFF;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 10px;
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg),
-            right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4.svg);
-        margin-bottom: 20px;
-    }
-    .working-process:hover img:nth-child(1) {
-        display: none;
-    }
-    .working-process:hover img:nth-child(2) {
-        display: inline-block;
-    }
-    .working-process:hover h5 {
-        color: #FFFFFF;
-    }
-    .working-process:hover h6 {
-        color: #FFFFFF;
-    }
-    .working-process:nth-child(1):hover {
-        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 1\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
-    }
-    .working-process:nth-child(2):hover {
-        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 2\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
-    }
-    .working-process:nth-child(3):hover {
-        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 3\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
-    }
-    .working-process:nth-child(4):hover {
-        background: right 5% top 12% no-repeat url(images/main/working\ process\ background\ 4\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
-    }
-    .working-process h5 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        color: #212529;
-    }
-// далі йде малий блок, де на background руки тримають землю з листками
-    .our-best-reliable-gardening-background { 
-        background: no-repeat left 35% top 85% url(images/main/hands\ holding\ leafs.svg);
-        margin-bottom: 50px;
-    } 
-    .our-best-reliable-gardening { 
-        padding-top: 50px; 
-        padding-bottom: 50px; 
-    } 
-    .our-best-reliable-gardening h3 { 
-        width: 272px; 
-        height: 54px; 
-        font-weight: 700; 
-        font-size: 20px; 
-        line-height: 27px; 
-        margin-left: 41px; 
-        text-align: center; 
-        color: #FFFFFF; 
-        margin-bottom: 30px;
-    } 
-    .btn-call-us-button { 
-        cursor: pointer;
-        display: flex; 
-        flex-direction: row; 
-        justify-content: center; 
-        align-items: center; 
-        padding: 10px 0px; 
-        gap: 10px; 
-        width: 137px; 
-        height: 40px; 
-        background: #FFFFFF; 
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08); 
-        border-radius: 5px; 
-        font-weight: 700; 
-        font-size: 14px; 
-        line-height: 19px; 
-        color: #00730C; 
-        margin-left: 108px; 
-    } 
-// далі йде our trained staff
-    .our-trained-staff-background p {
-        width: 345px;
-        height: 110px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #676767;
-        margin-bottom: 30px;
-    }
-    .staff {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-    .wrapper {
-        height: 343px; 
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-    }
-    .slider {
-        height: 343px;
-        overflow: hidden;
-        position: relative;
-        width: inherit;
-        align-self: center;
-    }
-    .wrapper > input {
-        display: none;
-    }
-    .slides {
-	    position: absolute;
-	    width: inherit;
-    }
-    .slide1, .slide2, .slide3, .slide4 {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        flex-direction: column;
-        border-radius: 5px;
-    }
-    .slide1 {
-        background-image: url(images/main/staff1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .slide2 {
-        background-image: url(images/main/staff2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .slide3 {
-        background-image: url(images/main/staff3.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .slide4 {
-        background-image: url(images/main/staff4.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-    .staffInfo {
-        background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
-        border-radius: 5px;
-        width: 100%;
-        height: 62px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .staffInfo h4 {
-        text-align: center;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 25px;
-        color: #FFFFFF;
-    }
-    .staffInfo h6 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        color: #FFFFFF;
-    }
-    .staff .controls {
-        height: 10px;
-        width: 145px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        align-self: center;
-        margin-bottom: 50px;
-    }
-    .staff label {
-        cursor: pointer;
-        display: inline-block;
-        height: 6px;
-        position: relative;
-        width: 30px;
-        transition: ease-in-out .5s;
-        border-radius: 8px;
-    }
-    .staff label:after {
-        border: 2px solid #00730C;
-        border-radius: 8px;
-        content: " ";
-        display: block;
-        height: 2px;
-        width: 26px;
-    }
-    .staff label:hover, 
-    #slide1:checked ~ .controls label:nth-of-type(1),
-    #slide2:checked ~ .controls label:nth-of-type(2),
-    #slide3:checked ~ .controls label:nth-of-type(3),
-    #slide4:checked ~ .controls label:nth-of-type(4) {
-        background: #00730C;
-    }
-    .slides {
-        height: inherit;
-        opacity: 0;
-        position: absolute;
-        width: inherit;
-        z-index: 0;
-        transform: scale(0.5);
-        transition: transform ease-in-out .5s, opacity ease-in-out .5s;
-    }
-    #slide1:checked ~ .slider > .slide1,
-    #slide2:checked ~ .slider > .slide2,
-    #slide3:checked ~ .slider > .slide3,
-    #slide4:checked ~ .slider > .slide4 {
-        opacity: 1;
-        z-index: 0;
-        transform: scale(1);
-    }
-// далі йде what clients saying
-    .what-clients-saying-backgr {
-        height: 585px;
-        padding-top: 50px;
-        background: #E6F6EA;
-        box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
-        backdrop-filter: blur(36.378px);
-    }
-    .what-clients-saying-backgr p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #676767;
-        margin-bottom: 40px;
-    }
-    .client-response {
-        margin: auto;
-        background: #FFFFFF;
-        width: 345px;
-        padding: 20px;
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-    }
-    .client-response h6 {
-        margin-top: 44px;
-        margin-bottom: 15px;
-    }
-    .client-response h5 {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        color: #212529;
-    }
-    .client-response p {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
-        color: #676767;
-        margin-bottom: 0px;
-        text-align: left;
-    }
-    .client-response-mark {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-// далі frequently asked questions
-    .frequently-asked-questions-backgr {
-        margin-top: 100px;
-        padding-top: 50px;
-    }
-    .frequently-asked-questions-backgr p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #676767;
-        margin-bottom: 40px;
-    }
-    .questions {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .question {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 345px;
-        height: 44px;
-        background: #FFF8F1;
-        border-radius: 3px;
-    }
-    .question h6 {
-        width: 285px;
-        height: 19px;
-        font-family: 'Nunito';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 19px;
-        display: flex;
-        align-items: center;
-        color: #212529;
-    }
-    .question img {
-        width: 16px;
-        height: 16px;
-    }
-// далі йде Our Insights & Articles
-    .our-insights-articles-backgr {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-    .our-insights-articles-backgr p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        text-align: center;
-        color: #676767;
-    }
-    .ask-the-agronomists {
-        margin-top: 40px;
-        padding: 30px 20px 35px 20px;
-        background: no-repeat right 1% top 1% url(images/main/ask\ agronomist\ backgr.svg);
-        box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
-        border-radius: 5px;
-    }
-    .planting {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        gap: 10px;
-        width: 122px;
-        height: 30px;
-        background: #D9F1E0;
-        box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
-        margin-bottom: 40px;
-    }
-    .planting > h6 {
-        width: 70px;
-        height: 30px;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: center;
-        color: #00730C;
-    }
-    .ask-the-agronomists h5 {
-        width: 277px;
-        height: 44px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        color: #00730C;
-        margin-bottom: 15px;
-    }
-    .ask-the-agronomists > h6 {
-        width: 305px;
-        height: 154px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 22px;
-        color: #676767;
-        margin-bottom: 30px;
-    }
-    .line {
-        width: 305px;
-        height: 1px;
-        background: #E3E3E3;
-        margin-bottom: 10px;
-    }
-    .underline {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    } 
-    .underline > h6 {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 19px;
-    }
-    .underline-admin {
-        display: flex;
-        gap: 10px;
-        align-items: center;
-    }
-// далі Partners
-    .partners-backgr {
-        padding-left: 30px;
-        padding-right: 30px;
-        height: 210px;
-    }
-    .partners-backgr-companies {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 50px;
-    }
-    .partners-backgr > img:nth-child(1) {
-        width: 141px;
-        height: 70px;   
-    }
-    .partners-backgr > img:nth-child(2) {
-        width: 112px;
-        height: 70px;   
-    }
-    .we-have-solutions {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 50px;
-        gap: 25px;
-        width: 320px;
-        height: 179px;
-        background: #D9F1E0;
-        border-radius: 5px;
-        margin: auto;
-    }
-    .we-have-solutions h3 {
-        width: 220px;
-        height: 54px;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 27px;
-        text-align: center;
-        color: #212529;
-    }
-    .we-have-solutions h3 span {
-        color: #00730C;
-    }
-    .solution {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 10px 30px;
-        gap: 10px;
-        width: 154px;
-        height: 40px;
-    }
+    height: 100%;
+    object-fit: cover;
+  }
+  .woman-holding-plant:after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  .how-it-works {
+    padding-bottom: 35px;
+  }
+  .image-text {
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 10px;
+  }
+  .image-text h6 {
+    color: #212529;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .title h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #212529;
+    text-align: start;
+  }
+  .description h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 40px;
+    color: #212529;
+  }
+  .btn-how-it-works {
+    height: 44px;
+    width: 303px;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00730c;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #00730c;
+    border-radius: 5px;
+  }
+  .btn-how-it-works:hover {
+    background-color: #ffffff;
+    color: #00730c;
+  }
+  .text-arrow {
+    display: flex;
+    justify-content: center;
+    color: #00730c;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .text-arrow img:nth-child(2) {
+    display: none;
+  }
+  .text-arrow img:nth-child(1) {
+    display: inline-block;
+  }
+  .text-arrow h6 {
+    padding-right: 12px;
+    color: #00730c;
+  }
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+  }
+  .btn-happy-customrs {
+    width: 133px;
+    height: 32px;
+    background: linear-gradient(180deg, #fff8f1 0%, #cbe5ce 100%);
+    border-radius: 32px;
+    border: none;
+  }
+  .btn-garden-created {
+    width: 128px;
+    height: 32px;
+    background: linear-gradient(180deg, #fff8f1 0%, #d7e8d9 100%);
+    border-radius: 32px;
+    border: none;
+    margin-right: 1px;
+    margin-left: 12px;
+  }
+  .quantity-members {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: #212529;
+  }
+  .quantity-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .buttons-larger-screen {
+    display: none;
+  }
+  // далі йде services we provide
+  .services-we-provide {
+    padding-top: 50px;
+  }
+  .services-we-provide > h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #212529;
+    margin-bottom: 15px;
+  }
+  .services-we-provide span {
+    color: #00730c;
+  }
+  .services-we-provide > h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .service {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+  }
+  .service-column {
+    margin-left: 20px;
+  }
+  .service-column > h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .service-column > h6 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .service img:nth-child(2) {
+    display: none;
+  }
+  .services-we-provide p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+  }
+  // стилі для трьох картинок і тексту з mission і vision
+  .images-block-experience {
+    background: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 1331px;
+    margin-top: 0px;
+  }
+  .container h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: #212529;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .container h1 span {
+    color: #00730c;
+  }
+  .container h6 {
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+  }
+  .three-pictures {
+    position: relative;
+    height: 492px;
+  }
+  .three-pictures img:nth-child(1) {
+    // position: absolute;
+    width: 188px;
+    height: 293px;
+  }
+  .three-pictures img:nth-child(2) {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 291px;
+    height: 358px;
+  }
+  .three-pictures img:nth-child(3) {
+    position: absolute;
+    left: 103px;
+    top: 300px;
+    width: 241px;
+    height: 162px;
+  }
+  // стилі для mission i vision
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .service-about-company {
+    width: 162px;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 5px;
+  }
+  .service-about-company img {
+    width: 40px;
+    height: 40px;
+  }
+  .service-about-company h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #212529;
+  }
+  .btn-discover-more {
+    height: 40px;
+    width: 167px;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00730c;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #00730c;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .btn-discover-more:hover {
+    background-color: #ffffff;
+    color: #00730c;
+    border-color: #00730c;
+  }
+  // далі why-choose-us
+  .why-choose-us-backgr {
+    background: #0c4b35;
+    padding-top: 50px;
+    height: 684px;
+  }
+  .why-choose-us h1 {
+    color: #ffffff;
+    margin-top: 30px;
+  }
+  .why-choose-us h6 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .proper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 158px;
+  }
+  .checkmark {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+  }
+  .checkmark img {
+    margin: auto;
+  }
+  .proper h5 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .proper-take-care {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 29px;
+    margin-bottom: 30px;
+  }
+  // далі йде working process
+  .working-process-background {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .working-process-background p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+    margin-bottom: 30px;
+  }
+  .working-process:nth-child(1) {
+    cursor: pointer;
+    width: 345px;
+    height: 208px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+    background: right 10% top 50% no-repeat
+        url(images/main/working\ process\ background.svg),
+      right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 1.svg);
+    margin-bottom: 20px;
+  }
+  .working-process:nth-child(2) {
+    cursor: pointer;
+    width: 345px;
+    height: 208px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+    background: right 10% top 50% no-repeat
+        url(images/main/working\ process\ background.svg),
+      right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 2.svg);
+    margin-bottom: 20px;
+  }
+  .working-process:nth-child(3) {
+    cursor: pointer;
+    width: 345px;
+    height: 208px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+    background: right 10% top 50% no-repeat
+        url(images/main/working\ process\ background.svg),
+      right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 3.svg);
+    margin-bottom: 20px;
+  }
+  .working-process:nth-child(4) {
+    cursor: pointer;
+    width: 345px;
+    height: 208px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 10px;
+    background: right 10% top 50% no-repeat
+        url(images/main/working\ process\ background.svg),
+      right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 4.svg);
+    margin-bottom: 20px;
+  }
+  .working-process:hover img:nth-child(1) {
+    display: none;
+  }
+  .working-process:hover img:nth-child(2) {
+    display: inline-block;
+  }
+  .working-process:hover h5 {
+    color: #ffffff;
+  }
+  .working-process:hover h6 {
+    color: #ffffff;
+  }
+  .working-process:nth-child(1):hover {
+    background: right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 1\ white.svg),
+      right 10% top 50% no-repeat
+        url(images/main/working\ process\ background\ white.svg),
+      #00730c;
+  }
+  .working-process:nth-child(2):hover {
+    background: right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 2\ white.svg),
+      right 10% top 50% no-repeat
+        url(images/main/working\ process\ background\ white.svg),
+      #00730c;
+  }
+  .working-process:nth-child(3):hover {
+    background: right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 3\ white.svg),
+      right 10% top 50% no-repeat
+        url(images/main/working\ process\ background\ white.svg),
+      #00730c;
+  }
+  .working-process:nth-child(4):hover {
+    background: right 5% top 12% no-repeat
+        url(images/main/working\ process\ background\ 4\ white.svg),
+      right 10% top 50% no-repeat
+        url(images/main/working\ process\ background\ white.svg),
+      #00730c;
+  }
+  .working-process h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212529;
+  }
+  // далі йде малий блок, де на background руки тримають землю з листками
+  .our-best-reliable-gardening-background {
+    background: no-repeat left 35% top 85%
+      url(images/main/hands\ holding\ leafs.svg);
+    margin-bottom: 50px;
+  }
+  .our-best-reliable-gardening {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .our-best-reliable-gardening h3 {
+    width: 272px;
+    height: 54px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    margin-left: 41px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  .btn-call-us-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 137px;
+    height: 40px;
+    background: #ffffff;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #00730c;
+    margin-left: 108px;
+  }
+  // далі йде our trained staff
+  .our-trained-staff-background p {
+    width: 345px;
+    height: 110px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+    margin-bottom: 30px;
+  }
+  .staff {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .wrapper {
+    height: 343px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .slider {
+    height: 343px;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    align-self: center;
+  }
+  .wrapper > input {
+    display: none;
+  }
+  .slides {
+    position: absolute;
+    width: inherit;
+  }
+  .slide1,
+  .slide2,
+  .slide3,
+  .slide4 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    border-radius: 5px;
+  }
+  .slide1 {
+    background-image: url(images/main/staff1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .slide2 {
+    background-image: url(images/main/staff2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .slide3 {
+    background-image: url(images/main/staff3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .slide4 {
+    background-image: url(images/main/staff4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .staffInfo {
+    background: linear-gradient(
+      6.68deg,
+      #00730c 4.95%,
+      rgba(251, 246, 238, 0) 264.79%
+    );
+    border-radius: 5px;
+    width: 100%;
+    height: 62px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .staffInfo h4 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+  .staffInfo h6 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .staff .controls {
+    height: 10px;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  .staff label {
+    cursor: pointer;
+    display: inline-block;
+    height: 6px;
+    position: relative;
+    width: 30px;
+    transition: ease-in-out 0.5s;
+    border-radius: 8px;
+  }
+  .staff label:after {
+    border: 2px solid #00730c;
+    border-radius: 8px;
+    content: " ";
+    display: block;
+    height: 2px;
+    width: 26px;
+  }
+  .staff label:hover,
+  #slide1:checked ~ .controls label:nth-of-type(1),
+  #slide2:checked ~ .controls label:nth-of-type(2),
+  #slide3:checked ~ .controls label:nth-of-type(3),
+  #slide4:checked ~ .controls label:nth-of-type(4) {
+    background: #00730c;
+  }
+  .slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    transform: scale(0.5);
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+  }
+  #slide1:checked ~ .slider > .slide1,
+  #slide2:checked ~ .slider > .slide2,
+  #slide3:checked ~ .slider > .slide3,
+  #slide4:checked ~ .slider > .slide4 {
+    opacity: 1;
+    z-index: 0;
+    transform: scale(1);
+  }
+  // далі йде what clients saying
+  .what-clients-saying-backgr {
+    height: 585px;
+    padding-top: 50px;
+    background: #e6f6ea;
+    box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099),
+      inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
+    backdrop-filter: blur(36.378px);
+  }
+  .what-clients-saying-backgr p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+    margin-bottom: 40px;
+  }
+  .client-response {
+    margin: auto;
+    background: #ffffff;
+    width: 345px;
+    padding: 20px;
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+  }
+  .client-response h6 {
+    margin-top: 44px;
+    margin-bottom: 15px;
+  }
+  .client-response h5 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212529;
+  }
+  .client-response p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #676767;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .client-response-mark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  // далі frequently asked questions
+  .frequently-asked-questions-backgr {
+    margin-top: 100px;
+    padding-top: 50px;
+  }
+  .frequently-asked-questions-backgr p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+    margin-bottom: 40px;
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 345px;
+    height: 44px;
+    background: #fff8f1;
+    border-radius: 3px;
+  }
+  .question h6 {
+    width: 285px;
+    height: 19px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #212529;
+  }
+  .question img {
+    width: 16px;
+    height: 16px;
+  }
+  // далі йде Our Insights & Articles
+  .our-insights-articles-backgr {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .our-insights-articles-backgr p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #676767;
+  }
+  .ask-the-agronomists {
+    margin-top: 40px;
+    padding: 30px 20px 35px 20px;
+    background: no-repeat right 1% top 1%
+      url(images/main/ask\ agronomist\ backgr.svg);
+    box-shadow: 2px 11px 30px rgba(51, 51, 51, 0.08);
+    border-radius: 5px;
+  }
+  .planting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 122px;
+    height: 30px;
+    background: #d9f1e0;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+  }
+  .planting > h6 {
+    width: 70px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #00730c;
+  }
+  .ask-the-agronomists h5 {
+    width: 277px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #00730c;
+    margin-bottom: 15px;
+  }
+  .ask-the-agronomists > h6 {
+    width: 305px;
+    height: 154px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #676767;
+    margin-bottom: 30px;
+  }
+  .line {
+    width: 305px;
+    height: 1px;
+    background: #e3e3e3;
+    margin-bottom: 10px;
+  }
+  .underline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .underline > h6 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .underline-admin {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  // далі Partners
+  .partners-backgr {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 210px;
+  }
+  .partners-backgr-companies {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .partners-backgr > img:nth-child(1) {
+    width: 141px;
+    height: 70px;
+  }
+  .partners-backgr > img:nth-child(2) {
+    width: 112px;
+    height: 70px;
+  }
+  .we-have-solutions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 25px;
+    width: 320px;
+    height: 179px;
+    background: #d9f1e0;
+    border-radius: 5px;
+    margin: auto;
+  }
+  .we-have-solutions h3 {
+    width: 220px;
+    height: 54px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #212529;
+  }
+  .we-have-solutions h3 span {
+    color: #00730c;
+  }
+  .solution {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    width: 154px;
+    height: 40px;
+  }
 }
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    // tablet
-  @media(min-width:768px) {
-main {
+// tablet
+@media (min-width: 768px) {
+  main {
     .container-fluid {
-        height: 470px;
+      height: 470px;
     }
     .how-it-works {
-        padding-bottom: 35px;
-    } 
-    .woman-holding-plant {
-        bottom: 0;
+      padding-bottom: 35px;
     }
-// стилістика services we provide
+    .woman-holding-plant {
+      bottom: 0;
+    }
+    // стилістика services we provide
     .col-sm-6 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
     }
     .services-we-provide p {
-        width: 545px;
-        margin: auto;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+      width: 545px;
+      margin: auto;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
     }
     .service {
-        width: 330px;
-        height: 366px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-left: 44px;
-        padding-right: 43px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background: no-repeat url(images/main/XMLID_46_white.svg);
-        background-position: 80px 25px;
+      width: 330px;
+      height: 366px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 44px;
+      padding-right: 43px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      background: no-repeat url(images/main/XMLID_46_white.svg);
+      background-position: 80px 25px;
     }
     .service:hover {
-        background: url(images/main/XMLID_46_.svg);
-        color: white;
-        border-radius: 10px;
+      background: url(images/main/XMLID_46_.svg);
+      color: white;
+      border-radius: 10px;
     }
     .service:hover h6 {
-        color: white;
+      color: white;
     }
     .service-column {
-        margin: 0 auto;
-        text-align: center;
-    } 
+      margin: 0 auto;
+      text-align: center;
+    }
     .service-column h5 {
-        margin-bottom: 10px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
     }
     .service-column > h6 {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
     }
     .service img {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 50px;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 50px;
     }
     .services-we-provide h1 {
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 61px;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 61px;
     }
     .service:hover img:nth-child(2) {
-        display: inline-block;
+      display: inline-block;
     }
     .service:hover img:nth-child(1) {
-        display: none;
+      display: none;
     }
     .btn-discover-more {
-        margin: 0;
+      margin: 0;
     }
     // далі йде блок з трьома картинками і текстом
     .images-block-experience {
-        height: 850px;
+      height: 850px;
     }
     .three-pictures {
-        min-width: 50%;
+      min-width: 50%;
     }
     .services {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
     .services-about-company {
-        max-width: 50%;
+      max-width: 50%;
     }
     .service-about-company {
-        cursor: pointer;
+      cursor: pointer;
     }
     .service-about-company:hover {
-        background-color: #00730C;
+      background-color: #00730c;
     }
     .service-about-company:hover img {
-        border: 1px solid white;
-        border-radius: 50%;
+      border: 1px solid white;
+      border-radius: 50%;
     }
     .service-about-company:hover h6 {
-        color: #FFFFFF;
+      color: #ffffff;
     }
     // далі йде why choose us
     .why-choose-us-backgr {
-        height: 659px;
-        padding-top: 100px;
-        padding-bottom: 100px;
+      height: 659px;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
     .why-choose-us {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
     }
     .why-choose-us-info h1 {
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 61px;
-        text-align: left;
-        margin-top: 0px;
-        margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 61px;
+      text-align: left;
+      margin-top: 0px;
+      margin-bottom: 30px;
     }
     .why-choose-us-info h6 {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
-        text-align: left;
-        margin-bottom: 50px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: left;
+      margin-bottom: 50px;
     }
     .proper-take-care {
-        margin-bottom: 50px;
+      margin-bottom: 50px;
     }
     .why-choose-us-info > .btn-discover-more {
-        margin-bottom: 0px;
-        margin: 0;
+      margin-bottom: 0px;
+      margin: 0;
     }
-// далі йде working process
+    // далі йде working process
     .working-process-background {
-        padding-top: 100px;
-        padding-bottom: 100px;
+      padding-top: 100px;
+      padding-bottom: 100px;
     }
     .working-process-background h1 {
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 61px;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 61px;
     }
     .working-process-background p {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
     }
     .working-process h5 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        margin-top: 40px;
-        margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
     .working-process h6 {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
     }
     .working-process:nth-child(1) {
-        width: 330px;
-        height: 408px;
-        padding: 50px 31px 70px 29px;
+      width: 330px;
+      height: 408px;
+      padding: 50px 31px 70px 29px;
     }
     .working-process:nth-child(2) {
-        width: 330px;
-        height: 408px;
-        padding: 50px 31px 70px 29px;
+      width: 330px;
+      height: 408px;
+      padding: 50px 31px 70px 29px;
     }
     .working-process:nth-child(3) {
-        width: 330px;
-        height: 408px;
-        padding: 50px 31px 70px 29px;
+      width: 330px;
+      height: 408px;
+      padding: 50px 31px 70px 29px;
     }
     .working-process:nth-child(4) {
-        width: 330px;
-        height: 408px;
-        padding: 50px 31px 70px 29px;
+      width: 330px;
+      height: 408px;
+      padding: 50px 31px 70px 29px;
     }
     .working-process:nth-child(1) {
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
-            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 1.svg);
+      background: right 10% top 50% no-repeat
+          url(images/main/working\ process\ background.svg),
+        right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 1.svg);
     }
     .working-process:nth-child(2) {
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
-            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 2.svg);
+      background: right 10% top 50% no-repeat
+          url(images/main/working\ process\ background.svg),
+        right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 2.svg);
     }
     .working-process:nth-child(3) {
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
-            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 3.svg);
+      background: right 10% top 50% no-repeat
+          url(images/main/working\ process\ background.svg),
+        right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 3.svg);
     }
     .working-process:nth-child(4) {
-        background: right 10% top 50% no-repeat url(images/main/working\ process\ background.svg), 
-            right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 4.svg);
+      background: right 10% top 50% no-repeat
+          url(images/main/working\ process\ background.svg),
+        right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 4.svg);
     }
     .working-process:nth-child(1):hover {
-        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 1\ white.svg),
-            right 10% top 50% / 100px no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+      background: right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 1\ white.svg),
+        right 10% top 50% / 100px no-repeat
+          url(images/main/working\ process\ background\ white.svg),
+        #00730c;
     }
     .working-process:nth-child(2):hover {
-        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 2\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+      background: right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 2\ white.svg),
+        right 10% top 50% no-repeat
+          url(images/main/working\ process\ background\ white.svg),
+        #00730c;
     }
     .working-process:nth-child(3):hover {
-        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 3\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+      background: right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 3\ white.svg),
+        right 10% top 50% no-repeat
+          url(images/main/working\ process\ background\ white.svg),
+        #00730c;
     }
     .working-process:nth-child(4):hover {
-        background: right 5% top 15% / 60px no-repeat url(images/main/working\ process\ background\ 4\ white.svg),
-            right 10% top 50% no-repeat url(images/main/working\ process\ background\ white.svg), #00730C;
+      background: right 5% top 15% / 60px no-repeat
+          url(images/main/working\ process\ background\ 4\ white.svg),
+        right 10% top 50% no-repeat
+          url(images/main/working\ process\ background\ white.svg),
+        #00730c;
     }
     .working-process img:nth-child(1) {
-        width: 70px;
-        height: 70px;
+      width: 70px;
+      height: 70px;
     }
     .working-process:hover img:nth-child(2) {
-        width: 70px;
-        height: 70px;
+      width: 70px;
+      height: 70px;
     }
-// далі йде малий блок, де на background руки тримають землю з листками
-    .our-best-reliable-gardening { 
-        margin-left: 350px;
-    } 
+    // далі йде малий блок, де на background руки тримають землю з листками
+    .our-best-reliable-gardening {
+      margin-left: 350px;
+    }
   }
 }
-   
+
 // laptop-m (md)
-  @media(min-width:1024px) {
-main {
+@media (min-width: 1024px) {
+  main {
     .container {
-        max-width: 970px;
-        margin: auto;
+      max-width: 970px;
+      margin: auto;
     }
     .woman-holding-plant {
-        height: 656px;
-        width: 1024px;
+      height: 656px;
+      width: 1024px;
     }
     .services-we-provide p {
-        width: 727px;
+      width: 727px;
     }
     .service {
-        cursor: pointer;
+      cursor: pointer;
     }
     .why-choose-us {
-        gap: 82px;
+      gap: 82px;
     }
-    .our-best-reliable-gardening { 
-        margin-left: 475px;
-    } 
+    .our-best-reliable-gardening {
+      margin-left: 475px;
+    }
   }
 }
-    
+
 // laptop-l (lg)
-    @media(min-width:1200px) {
-main {
+@media (min-width: 1200px) {
+  main {
     .container {
-        max-width: 1170px;
+      max-width: 1170px;
     }
     .woman-holding-plant {
-        height: 384px;
-        width: 600px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
+      height: 384px;
+      width: 600px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
     .col-lg-4 {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     .services-we-provide p {
-        width: 852px;
+      width: 852px;
     }
     .young-woman-taking-care-her-plants img {
-        width: 672px;
-        height: 426px;
+      width: 672px;
+      height: 426px;
     }
     // далі йде блок з трьома картинками і текстом
     .services {
-        width: 525px;
+      width: 525px;
     }
     // why choose us
     .why-choose-us-backgr {
-        height: 659px;
+      height: 659px;
     }
-    .our-best-reliable-gardening { 
-        display: flex;
-    } 
+    .our-best-reliable-gardening {
+      display: flex;
+    }
   }
 }
-    
+
 // desktop
-  @media(min-width:1600px) {
-main {
+@media (min-width: 1600px) {
+  main {
     .container {
-        max-width: 1410px;
-        margin: auto;
+      max-width: 1410px;
+      margin: auto;
     }
     .container-fluid {
-        background: no-repeat url(images/main/plant.svg), linear-gradient(39.89deg, rgba(0, 115, 12, 0.81) -22.86%, rgba(251, 246, 238, 0) 116.18%);
-        background-position-y: 95%;
-        height: 719px;
+      background: no-repeat url(images/main/plant.svg),
+        linear-gradient(
+          39.89deg,
+          rgba(0, 115, 12, 0.81) -22.86%,
+          rgba(251, 246, 238, 0) 116.18%
+        );
+      background-position-y: 95%;
+      height: 719px;
     }
     .how-it-works {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-left: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 100px;
     }
     .image-text {
-        margin-left: 0px;
-        padding-top: 87px;
+      margin-left: 0px;
+      padding-top: 87px;
     }
     .image-text h6 {
-        font-size: 16px;
-        line-height: 20px;
+      font-size: 16px;
+      line-height: 20px;
     }
     .title h1 {
-        margin-left: 0px;
-        font-size: 58px;
-        line-height: 79px;
+      margin-left: 0px;
+      font-size: 58px;
+      line-height: 79px;
     }
     .description h6 {
-        margin-left: 0px;
-        font-size: 18px;
-        line-height: 30px;
+      margin-left: 0px;
+      font-size: 18px;
+      line-height: 30px;
     }
     .btn-how-it-works {
-        margin: 0 0;
-        width: 175px;
-        height: 50px;
-        font-size: 18px;
-        line-height: 24px;
+      margin: 0 0;
+      width: 175px;
+      height: 50px;
+      font-size: 18px;
+      line-height: 24px;
     }
     .row-btn-how-it-works-text-arrow {
-        display: flex;
+      display: flex;
     }
     .text-arrow {
-        margin-top: 0px;
-        margin-left: 30px;
-        width: 159px;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
+      margin-top: 0px;
+      margin-left: 30px;
+      width: 159px;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: nowrap;
     }
     .text-arrow h6 {
-        width: 142px;
-        color: #676767;
+      width: 142px;
+      color: #676767;
     }
     .text-arrow img {
-        width: 20px;
-        height: 15px;
+      width: 20px;
+      height: 15px;
     }
     .text-arrow img:nth-child(2) {
-        display: none;
+      display: none;
     }
     .buttons {
-        display: none;
+      display: none;
     }
-// далі стилістика для кнопок на широкому екрані
+    // далі стилістика для кнопок на широкому екрані
     .buttons-larger-screen {
-        margin-top: 58px;
-        display: flex;
+      margin-top: 58px;
+      display: flex;
     }
     .button-larger-screen {
-        width: 149px;
-        height: 50px;
-        display: flex;
-        align-items: center;
+      width: 149px;
+      height: 50px;
+      display: flex;
+      align-items: center;
     }
     .quantity-text {
-        margin-left: 10px;
-        width: 89px;
-        height: 40px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        text-transform: capitalize;
-        color: #212529;
+      margin-left: 10px;
+      width: 89px;
+      height: 40px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-transform: capitalize;
+      color: #212529;
     }
     .quantity {
-        width: 50px;
-        height: 50px;
-        background: linear-gradient(72.71deg, #00730C -83.5%, #F9F9F9 93.84%);
-        border-radius: 35px;
-        padding: 15px 7px;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        color: #212529;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(72.71deg, #00730c -83.5%, #f9f9f9 93.84%);
+      border-radius: 35px;
+      padding: 15px 7px;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      color: #212529;
     }
     .woman-holding-plant {
-        width: 850px;
-        height: 673px;
+      width: 850px;
+      height: 673px;
     }
     .woman-holding-plant img {
-        width: 850px;
-        height: 673px;
+      width: 850px;
+      height: 673px;
     }
-// далі services we provide
+    // далі services we provide
     .services-we-provide {
-        padding-top: 100px;
+      padding-top: 100px;
     }
     .col-xl-3 {
-        display: flex;
-        flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
     }
     .service {
-        width: 330px;
-        height: 366px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding-left: 44px;
-        padding-right: 43px;
-        margin-right: 20px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        cursor: pointer;
+      width: 330px;
+      height: 366px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 44px;
+      padding-right: 43px;
+      margin-right: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
     }
     .services-we-provide p {
-        width: 1136px;
-        height: 60px;
-        margin: auto;
+      width: 1136px;
+      height: 60px;
+      margin: auto;
     }
     .service:nth-child(4) {
-        margin-right: 0px;
+      margin-right: 0px;
     }
     .service:nth-child(8) {
-        margin-right: 0px;
+      margin-right: 0px;
     }
-// стилі для трьох картинок і тексту
+    // стилі для трьох картинок і тексту
     .container h1 {
-        margin-bottom: 30px;
+      margin-bottom: 30px;
     }
     .images-block-experience {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        height: 1153px;
-        background: no-repeat url(images/main/Fern.svg);
-        background-position-y: 25%;
-        background-position-x: -20%;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      height: 1153px;
+      background: no-repeat url(images/main/Fern.svg);
+      background-position-y: 25%;
+      background-position-x: -20%;
     }
     .three-pictures img:nth-child(1) {
-        width: 450px;
-        height: 706px;
+      width: 450px;
+      height: 706px;
     }
     .three-pictures img:nth-child(2) {
-        left: 24px;
-        top: 36px;
-        width: 601px;
-        height: 741px;
+      left: 24px;
+      top: 36px;
+      width: 601px;
+      height: 741px;
     }
     .three-pictures img:nth-child(3) {
-        left: 230px;
-        top: 597px;
-        width: 456px;
-        height: 356px;
+      left: 230px;
+      top: 597px;
+      width: 456px;
+      height: 356px;
     }
     .services-about-company h1 {
-        margin-top: 36px;
-        width: 574px;
-        height: 122px;
-        font-weight: 800;
-        font-size: 45px;
-        line-height: 61px;
-        text-align: left;
+      margin-top: 36px;
+      width: 574px;
+      height: 122px;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 61px;
+      text-align: left;
     }
     .services-about-company h6 {
-        width: 672px;
-        height: 280px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
+      width: 672px;
+      height: 280px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
     }
     .services {
-        gap: 30px;
-        width: 690px;
-        margin-bottom: 50px;
+      gap: 30px;
+      width: 690px;
+      margin-bottom: 50px;
     }
     .service-about-company {
-        width: 330px;
-        height: 97px;
-        flex-direction: row;
+      width: 330px;
+      height: 97px;
+      flex-direction: row;
     }
     .service-about-company img {
-        width: 67px;
-        height: 67px;
+      width: 67px;
+      height: 67px;
     }
     .service-about-company h6 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-        width: 198px;
-        height: 33px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      width: 198px;
+      height: 33px;
     }
-// далі why choose us
+    // далі why choose us
     .why-choose-us-backgr {
-        background: no-repeat center center url(images/main/why\ choose\ us\ backgr.svg);
+      background: no-repeat center center
+        url(images/main/why\ choose\ us\ backgr.svg);
     }
     .why-choose-us-info h1 {
-        font-weight: 700;
-        font-size: 45px;
-        line-height: 61px;
-        margin-top: 0px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 61px;
+      margin-top: 0px;
     }
     .why-choose-us-info h6 {
-        font-size: 18px;
-        line-height: 30px;
-        margin-bottom: 50px;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 50px;
     }
     .proper {
-        gap: 20px;
-        width: 242px;
+      gap: 20px;
+      width: 242px;
     }
     .proper h5 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 33px;
-    } 
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+    }
     .checkmark {
-        width: 30px;
-        height: 30px;
+      width: 30px;
+      height: 30px;
     }
     .proper-take-care {
-        gap: 20px 118px;
-        margin-bottom: 50px;
+      gap: 20px 118px;
+      margin-bottom: 50px;
     }
     .btn-discover-more {
-        height: 50px;
-        width: 190px;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
+      height: 50px;
+      width: 190px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
     }
-// далі working process
+    // далі working process
     .working-process-background p {
-        width: 1136px;
-        margin: auto;
+      width: 1136px;
+      margin: auto;
     }
-// далі йде малий блок, де на background руки тримають землю з листками
+    // далі йде малий блок, де на background руки тримають землю з листками
     .our-best-reliable-gardening {
-        margin-left: 610px;
-        align-items: center;
+      margin-left: 610px;
+      align-items: center;
     }
     .our-best-reliable-gardening h3 {
-        font-weight: 700;
-        font-size: 33px;
-        line-height: 45px;
-        width: 448px;
-        height: 90px;
-        margin-left: 0px;
-        margin-bottom: 0px;
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 45px;
+      width: 448px;
+      height: 90px;
+      margin-left: 0px;
+      margin-bottom: 0px;
     }
     .btn-call-us-button {
-        width: 170px;
-        height: 50px;
-        margin-left: 85px;
+      width: 170px;
+      height: 50px;
+      margin-left: 85px;
     }
   }
 }
-    
