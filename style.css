@@ -1002,6 +1002,11 @@ main .solution {
   main .container-fluid {
     height: 470px;
   }
+  main .stand-together {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+  }
   main .how-it-works {
     max-width: 50%;
   }
@@ -1010,6 +1015,7 @@ main .solution {
   }
   main .woman-holding-plant img {
     bottom: 0;
+    top: 50%;
   }
   main .col-sm-6 {
     display: flex;
@@ -1225,10 +1231,6 @@ main .solution {
     max-width: 970px;
     margin: auto;
   }
-  main .woman-holding-plant {
-    height: 656px;
-    width: 1024px;
-  }
   main .services-we-provide p {
     width: 727px;
   }
@@ -1247,11 +1249,8 @@ main .solution {
     max-width: 1170px;
   }
   main .woman-holding-plant {
-    height: 384px;
+    height: 470px;
     width: 600px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
   }
   main .col-lg-4 {
     flex-wrap: wrap;
@@ -1260,8 +1259,9 @@ main .solution {
     width: 852px;
   }
   main .young-woman-taking-care-her-plants img {
-    width: 672px;
-    height: 426px;
+    width: 600px;
+    height: 300px;
+    top: 0%;
   }
   main .services {
     width: 525px;

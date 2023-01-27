@@ -873,6 +873,11 @@ main {
     .container-fluid {
       height: 470px;
     }
+    .stand-together {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 20px;
+    }
     .how-it-works {
       max-width: 50%;
     }
@@ -881,6 +886,7 @@ main {
     }
     .woman-holding-plant img {
       bottom: 0;
+      top: 50%;
     }
     // стилістика services we provide
     .col-sm-6 {
@@ -1133,10 +1139,6 @@ main {
       max-width: 970px;
       margin: auto;
     }
-    .woman-holding-plant {
-      height: 656px;
-      width: 1024px;
-    }
     .services-we-provide p {
       width: 727px;
     }
@@ -1159,11 +1161,8 @@ main {
       max-width: 1170px;
     }
     .woman-holding-plant {
-      height: 384px;
+      height: 470px;
       width: 600px;
-      position: absolute;
-      right: 0;
-      bottom: 0;
     }
     .col-lg-4 {
       flex-wrap: wrap;
@@ -1172,8 +1171,9 @@ main {
       width: 852px;
     }
     .young-woman-taking-care-her-plants img {
-      width: 672px;
-      height: 426px;
+      width: 600px;
+      height: 300px;
+      top: 0%;
     }
     // далі йде блок з трьома картинками і текстом
     .services {
