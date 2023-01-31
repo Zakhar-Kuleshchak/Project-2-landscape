@@ -1129,6 +1129,78 @@ main {
     .our-best-reliable-gardening {
       margin-left: 350px;
     }
+    // далі йде our trained staff
+    .bigger-text {
+      width: 371px;
+      height: 61px;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 61px;
+      text-align: left;
+    }
+    .p-button-tog {
+      display: flex;
+      justify-content: space-between;
+    }
+    // далі йде what clients saying
+    .what-clients-saying-backgr h1 {
+      width: 442px;
+      height: 61px;
+      font-weight: 800;
+      font-size: 45px;
+      line-height: 61px;
+    }
+    .what-clients-saying-backgr p {
+      width: 380px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .client-response {
+      width: 690px;
+      height: 341px;
+      padding: 32px 28px 33px 25px;
+    }
+    .client-response img {
+      height: 276px;
+      width: 193px;
+    }
+    .horizontal {
+      display: flex;
+      gap: 31px;
+    }
+    .horizontal-2 h6 {
+      width: 405px;
+      height: 150px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 40px;
+      margin-bottom: 27px;
+    }
+    .client-response-mark-info h5 {
+      width: 122px;
+      height: 33px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      margin-bottom: 5px;
+    }
+    .client-response-mark-info p {
+      width: 64px;
+      height: 25px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .client-response-mark-info-stars {
+      display: flex;
+      gap: 13px;
+    }
+    .client-response-mark-info-stars img {
+      height: 20px;
+      width: 20px;
+    }
   }
 }
 
@@ -1161,9 +1233,13 @@ main {
       max-width: 1170px;
     }
     .woman-holding-plant {
-      height: 470px;
+      height: 400px;
       width: 600px;
     }
+    .woman-holding-plant img {
+      top: 70px;
+      right: 0px;
+    } 
     .col-lg-4 {
       flex-wrap: wrap;
     }
@@ -1206,11 +1282,17 @@ main {
       background-position-y: 95%;
       height: 719px;
     }
+    .stand-together {
+      gap: 100px;
+    }
+    .woman-holding-plant img {
+      top: 46px;
+      width: 750px;
+    }
     .how-it-works {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 100px;
     }
     .image-text {
       margin-left: 0px;
@@ -1297,10 +1379,6 @@ main {
       color: #212529;
     }
     .woman-holding-plant {
-      width: 850px;
-      height: 673px;
-    }
-    .woman-holding-plant img {
       width: 850px;
       height: 673px;
     }
@@ -1465,6 +1543,20 @@ main {
       width: 170px;
       height: 50px;
       margin-left: 85px;
+    }
+    // далі йде our trained staff
+    .our-trained-staff-background p {
+      width: 956px;
+      height: 60px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    .slides {
+      background-size: 25%;
+    }
+    .staffInfo {
+      width: 25%;
     }
   }
 }
