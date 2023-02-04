@@ -1201,6 +1201,17 @@ main {
       height: 20px;
       width: 20px;
     }
+    // останній блок перед футером
+    .we-have-solutions {
+      width: 720px;
+      height: 125px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .solution {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
 }
 
@@ -1222,6 +1233,10 @@ main {
     }
     .our-best-reliable-gardening {
       margin-left: 475px;
+    }
+    // останній блок перед футером
+    .we-have-solutions {
+      width: 970px;
     }
   }
 }
@@ -1261,6 +1276,10 @@ main {
     }
     .our-best-reliable-gardening {
       display: flex;
+    }
+    // останній блок перед футером
+    .we-have-solutions {
+      width: 1140px;
     }
   }
 }
@@ -1557,6 +1576,19 @@ main {
     }
     .staffInfo {
       width: 25%;
+    }
+    // останній блок перед футером
+    .we-have-solutions {
+      width: 1410px;
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .we-have-solutions h3 {
+      width: 764px;
+      height: 61px;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 61px;
     }
   }
 }

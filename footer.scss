@@ -1,0 +1,205 @@
+footer {
+    font-family: "Nunito", sans-serif;
+    margin: auto;
+    color: white;
+    width: 100%;
+    .container {
+        padding: 0px 15px 0px 15px;
+        margin: auto;
+    }
+    .footr-backgr {
+        height: 1081px;
+        width: 375px;
+        background: #0C4B35;
+        padding-top: 139px;
+    }
+    .subscribe-to-newsletter {
+        width: 205px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .subscribe-to-newsletter-text {
+        width: 345px;
+        height: 66px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 31px;
+    }
+    .inp-foot {
+        background-color: #0C4B35;
+        border: none;
+        width: 199px;
+        height: 22px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    ::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+    .email-subscribe {
+        display: flex;
+        align-items: flex-end;
+    }
+    .subscribe {
+        width: 101px;
+        height: 30px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .social-networks {
+        display: flex;
+        gap: 20px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    .facebook-network img:nth-child(2) {
+        display: none;
+    }
+    .facebook-network:hover img:nth-child(1) {
+        display: none;
+    }
+    .facebook-network:hover img:nth-child(2) {
+        display: inline-block;
+    }
+    .twitter-network img:nth-child(2) {
+        display: none;
+    }
+    .twitter-network:hover img:nth-child(1) {
+        display: none;
+    }
+    .twitter-network:hover img:nth-child(2) {
+        display: inline-block;
+    }
+    .google-network img:nth-child(2) {
+        display: none;
+    }
+    .google-network:hover img:nth-child(1) {
+        display: none;
+    }
+    .google-network:hover img:nth-child(2) {
+        display: inline-block;
+    }
+    .linkedin-network img:nth-child(2) {
+        display: none;
+    }
+    .linkedin-network:hover img:nth-child(1) {
+        display: none;
+    }
+    .linkedin-network:hover img:nth-child(2) {
+        display: inline-block;
+    }
+    .contacts-text-footer {
+        width: 74px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .contacts-text-footer-adress {
+        width: 266px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .contacts-text-footer-number {
+        width: 233px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .contacts-text-footer-email {
+        width: 148px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 40px;
+    }
+    .useful-links {
+        width: 103px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .useful-link-group {
+        height: 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .useful-links-pair {
+        display: flex;
+        margin-top: 10px;
+    }
+    .right-arrow-footer {
+        display: flex;
+        gap: 10px;
+    }
+    .blog-footer {
+        margin-left: 122px;
+    }
+    .FAQ-footer {
+        margin-left: 100px;
+    }
+    .contact-us-footer {
+        margin-left: 107px;
+    }
+    .thank-you-footer {
+        margin-left: 116px;
+    }
+    .popular-services {
+        width: 133px;
+        height: 25px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    .popular-services-variants {
+        height: 22px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    .distance-t-b {
+        margin-top: 41px;
+        margin-bottom: 15px;
+    }
+    .copyright-cent {
+        margin: auto;
+        width: 286px;
+        height: 32px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .privacy-sitemap-terms {
+        display: flex;
+        gap: 30px;
+        margin: auto;
+    }
+    .privacy-sitemap-terms-variant {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
