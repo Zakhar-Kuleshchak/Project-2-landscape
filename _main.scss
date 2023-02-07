@@ -816,6 +816,7 @@ main {
     padding-left: 30px;
     padding-right: 30px;
     height: 210px;
+    position: relative;
   }
   .partners-backgr-companies {
     display: flex;
@@ -831,6 +832,8 @@ main {
     height: 70px;
   }
   .we-have-solutions {
+    position: absolute;
+    left: 28px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1578,7 +1581,12 @@ main {
       width: 25%;
     }
     // останній блок перед футером
+    .partners-backgr {
+      height: 263px;
+    }
     .we-have-solutions {
+      left: 95px;
+      bottom: -63px;
       width: 1410px;
       padding-left: 100px;
       padding-right: 100px;

@@ -948,6 +948,7 @@ main .partners-backgr {
   padding-left: 30px;
   padding-right: 30px;
   height: 210px;
+  position: relative;
 }
 main .partners-backgr-companies {
   display: flex;
@@ -963,6 +964,8 @@ main .partners-backgr > img:nth-child(2) {
   height: 70px;
 }
 main .we-have-solutions {
+  position: absolute;
+  left: 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1641,7 +1644,12 @@ main .solution {
   main .staffInfo {
     width: 25%;
   }
+  main .partners-backgr {
+    height: 263px;
+  }
   main .we-have-solutions {
+    left: 95px;
+    bottom: -63px;
     width: 1410px;
     padding-left: 100px;
     padding-right: 100px;
@@ -1656,15 +1664,15 @@ main .solution {
 }
 footer {
   font-family: "Nunito", sans-serif;
-  margin: auto;
   color: white;
   width: 100%;
+  margin: auto;
 }
 footer .container {
   padding: 0px 15px 0px 15px;
-  margin: auto;
 }
 footer .footr-backgr {
+  margin: auto;
   height: 1081px;
   width: 375px;
   background: #0C4B35;
@@ -1851,11 +1859,176 @@ footer .copyright-cent {
 }
 footer .privacy-sitemap-terms {
   display: flex;
+  justify-content: center;
   gap: 30px;
-  margin: auto;
 }
 footer .privacy-sitemap-terms-variant {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+}
+
+@media (min-width: 1600px) {
+  footer .footr-backgr {
+    width: auto;
+  }
+  footer .container {
+    max-width: 1410px;
+    margin: auto;
+  }
+  footer .footr-blocks-large-scr {
+    display: flex;
+    gap: 96px;
+  }
+  footer .subscribe-to-newsletter-block {
+    width: 498px;
+  }
+  footer .subscribe-to-newsletter {
+    width: 273px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 80px;
+  }
+  footer .subscribe-to-newsletter-text {
+    width: 449px;
+    height: 90px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 44px;
+  }
+  footer .email-subscribe {
+    justify-content: space-between;
+  }
+  footer .inp-foot {
+    width: 199px;
+    height: 25px;
+    line-height: 25px;
+  }
+  footer .subscribe {
+    width: 110px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  footer .social-networks {
+    margin-top: 30px;
+    margin-bottom: 41px;
+  }
+  footer .social-networks img {
+    height: 40px;
+    width: 40px;
+  }
+  footer .distance-t-b {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  footer .contacts-text-footer {
+    width: 98px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 80px;
+  }
+  footer .contacts-text-footer-adress {
+    width: 208px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  footer .contacts-text-footer-number {
+    width: 150px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  footer .virgule {
+    display: none;
+  }
+  footer .contacts-text-footer-email {
+    width: 190px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  footer .useful-links-block {
+    width: 255px;
+  }
+  footer .useful-links {
+    width: 138px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 80px;
+  }
+  footer .useful-link-group {
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  footer .useful-links-pair {
+    margin-top: 20px;
+  }
+  footer .right-arrow-footer {
+    gap: 5px;
+  }
+  footer .blog-footer {
+    margin-left: 78px;
+  }
+  footer .FAQ-footer {
+    margin-left: 50px;
+  }
+  footer .contact-us-footer {
+    margin-left: 59px;
+  }
+  footer .thank-you-footer {
+    margin-left: 70px;
+  }
+  footer .popular-services {
+    margin-top: 0px;
+    margin-bottom: 80px;
+    width: 177px;
+    height: 33px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  footer .popular-services-variants {
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  footer .copyright-cent {
+    margin: 0;
+    width: 425px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  footer .privacy-sitemap-terms {
+    gap: 30px;
+  }
+  footer .privacy-sitemap-terms-variant {
+    height: 28px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  footer .end-of-footr {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }/*# sourceMappingURL=style.css.map */
